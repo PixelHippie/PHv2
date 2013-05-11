@@ -1,0 +1,473 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/b/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Gumby - A Flexible, Responsive CSS Framework - Powered by SASS</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="humans.txt">
+
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+	<!-- Facebook Metadata /-->
+	<meta property="fb:page_id" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content=""/>
+	<meta property="og:title" content=""/>
+
+	<!-- Google+ Metadata /-->
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/gumby.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<style>
+		body {background: #EEE; color: #FFF;}
+		.navbar {margin-bottom: 0;}
+		#main-content .row {text-align: center;}
+		section {margin: 250px 0;}
+			#contact {margin-bottom: 0;}
+		#branding, #work, #contact {background: #B1B429;}
+		#branding, #work, #contact, footer .row {padding: 250px 0;}
+		#logo, #tagline {font-weight: 900; text-transform: uppercase;}
+		h3 {text-align: center; margin: 1em;}
+			h3:before, h3:after {content: " ----------- "}
+		.project-details {text-align: left;}
+		.project-tags li {display: inline;}
+		footer li {display: inline;}
+		h1.logo>a>img {height: 60px;}
+		#main-social li {display: inline;}
+
+		.service-group {background: gray;}
+		.tab-content {background: gray;}
+
+		footer {background: #4B4D50; color: #FFF;}
+		li:after {content: "/";}
+			li:last-child:after {content: none;}
+		#nav li:after, #main-social li:after, #services li:after {content: none;}
+	</style>
+
+	<!-- Scripts -->
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Main Navigation -->
+	<nav class="navbar" gumby-fixed="top" id="nav">
+		<div class="row">
+			<a class="toggle" gumby-trigger="#nav > .row > ul" href="#"><i class="icon-menu"></i></a>
+			<h1 class="four columns logo">
+				<a href="#branding">
+					<img src="img/nav-logo.png" alt="Pixel Leaf Logo" gumby-retina />
+				</a>
+			</h1>
+			<ul class="eight columns">
+				<li>
+					<a href="#services">Services</a>
+				</li>
+				<li>
+					<a href="#work">Work</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav><!-- / #nav -->
+
+	<div id="main-content">
+
+		<!-- Branding -->
+		<header id="branding" class="container">
+
+			<!-- Hero -->
+			<div id="hero" class="row">
+				<div class="special head ten columns centered">
+					<h1 id="logo">
+						Pixel Hippie Creative
+					</h1>
+					<h2 id="tagline">
+						Design &amp; Development
+					</h2>
+				</div>
+			</div><!-- / #hero -->
+
+			<!-- Intro -->
+			<div id="intro" class="row">
+				<div class="seven columns centered">
+					<p>
+						Hey, I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-250" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
+					</p>
+					<p>
+						I<i class="icon-heart"></i>crafting bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
+					</p>
+					<p>
+						<a href="#work">see my work</a> -or- <a href="#contact">drop me a line</a>
+					</p>
+				</div>
+			</div><!-- / #intro -->
+
+			<!-- Main Social -->
+			<div id="main-social" class="row">
+				<div class="six columns centered">
+					<ul class="row">
+						<li class="four coulumns">
+							<div class="medium metro rounded btn default icon-left entypo icon-twitter">
+								<a href="#">Twitter</a>
+							</div>
+						</li>
+						<li class="four coulumns">
+							<div class="medium metro rounded btn default icon-left entypo icon-dribbble">
+								<a href="#">Dribbble</a>
+							</div>
+						</li>
+						<li class="four coulumns">
+							<div class="medium metro rounded btn default icon-left entypo icon-github">
+								<a href="#">GitHub</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div><!-- / #main-social -->
+
+		</header><!-- / #branding -->
+
+		<!-- SERVICES -->
+		<section id="services" class="container">
+
+			<!-- Services Overview -->
+			<h3>What I do</h3>
+			<div id="services-overview" class="row">
+				<div class="nine columns centered">
+					<div class="four columns">
+						<div id="service1" class="service-group">
+							<h4>Design</h4>
+							<ul>
+								<li>Responsive</li>
+								<li>Branding &amp; Identity</li>
+								<li>Typography</li>
+								<li><acronym title="User Interface">UI</acronym>/<acronym title="User Experience">UX</acronym></li>
+							</ul>
+						</div>
+					</div>
+					<div class="four columns">
+						<div id="service1" class="service-group">
+							<h4>Develop</h4>
+							<ul>
+								<li><acronym title="HyperText Markup Language">HTML5</acronym> &amp; <acronym title="Cascading Style Sheets">CSS3</acronym></li>
+								<li><acronym title="Hypertext Preprocessor">PHP</acronym> &amp; MySQL</li>
+								<li>Sass &amp; Compass</li>
+								<li><acronym title="JavaScript">JS</acronym> & jQuery</li>
+							</ul>
+						</div>
+					</div>
+					<div class="four columns">
+						<div id="service1" class="service-group">
+							<h4>Promote</h4>
+							<ul>
+								<li>Advertising</li>
+								<li>Online Marketing</li>
+								<li>Social</li>
+								<li><acronym title="Search Engine Optimization">SEO</acronym></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- / #services-overview -->
+
+			<!-- Process Overview -->
+			<h3>How I do it</h3>
+				<div id="process-overview" class="row">
+					<div class="nine columns centered">
+						<div class="pill tabs">
+							 <ul class="tab-nav">
+							 	<li class="active">
+							 		<a href="#">
+							 			Discover
+							 				<i class="icon-plus"></i>
+							 			Plan
+							 		</a>
+							 	</li>
+							 	<li>
+							 		<a href="#">
+							 			Conceptualize
+							 				<i class="icon-plus"></i>
+							 			Visualize
+							 		</a>
+							 	</li>
+							 	<li>
+							 		<a href="#">
+							 			Develop
+							 				<i class="icon-plus"></i>
+							 			Deploy
+							 		</a>
+							 	</li>
+							 	<li>
+							 		<a href="#">
+							 			Test
+							 				<i class="icon-plus"></i>
+							 			Launch
+							 		</a>
+							 	</li>
+							 	<li>
+							 		<a href="#">
+							 			Promote
+							 				<i class="icon-plus"></i>
+							 			Measure
+							 		</a>
+							 	</li>
+							 </ul>
+							 <div class="tab-content active">
+								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+							 </div>
+							 <div class="tab-content">
+								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
+							 </div>
+							 <div class="tab-content">
+								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+							 </div>
+							 <div class="tab-content">
+								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+							 </div>
+							 <div class="tab-content">
+								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+							 </div>
+						</div><!-- / #process-overview -->
+					</div>
+				</div><!-- / #process-overview -->
+
+		</section><!-- / #services -->
+
+		<!-- WORK -->
+		<section id="work" class="container">
+
+			<h3>What I've done</h3>
+
+				<!-- Project 1 -->
+				<div id="project-1" class="row">
+
+					<div class="six columns project-showcase">
+						<!-- // PROJECT SHOWCASE SLIDER \\ -->
+					</div><!-- / .project-showcase -->
+
+					<div class="six columns project-details">
+						<h4>Project Title</h4>
+						<!-- Description -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam temporibus consequatur officia vero quis laborum doloremque culpa rerum aperiam. Recusandae velit laborum nulla neque similique minima fugit. Inventore laborum sequi.
+						</p>
+						<!-- Tags -->
+						<ul class="project-tags">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>jQuery</li>
+							<li>Logo</li>
+							<li>PHP</li>
+						</ul>
+						<!-- Links -->
+						<div class="row project-links">
+							<div class="six columns">
+								Website Link
+							</div>
+							<div class="six columns">
+								Case Study
+							</div>
+						</div>
+					</div><!-- / .project-details -->
+
+				</div><!-- / #project-1 -->
+
+				<!-- Project 2 -->
+				<div id="project-2" class="row">
+
+					<div class="six columns project-showcase">
+						<!-- // PROJECT SHOWCASE SLIDER \\ -->
+					</div><!-- / .project-showcase -->
+
+					<div class="six columns project-details">
+						<h4>Project Title</h4>
+						<!-- Description -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam temporibus consequatur officia vero quis laborum doloremque culpa rerum aperiam. Recusandae velit laborum nulla neque similique minima fugit. Inventore laborum sequi.
+						</p>
+						<!-- Tags -->
+						<ul class="project-tags">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>jQuery</li>
+							<li>Logo</li>
+							<li>PHP</li>
+						</ul>
+						<!-- Links -->
+						<div class="row project-links">
+							<div class="six columns">
+								Website Link
+							</div>
+							<div class="six columns">
+								Case Study
+							</div>
+						</div>
+					</div><!-- / .project-details -->
+
+				</div><!-- / #project-2 -->
+
+				<!-- Project 3 -->
+				<div id="project-3" class="row">
+
+					<div class="six columns project-showcase">
+						<!-- // PROJECT SHOWCASE SLIDER \\ -->
+					</div><!-- / .project-showcase -->
+
+					<div class="six columns project-details">
+
+						<h4>Project Title</h4>
+
+						<!-- Description -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam temporibus consequatur officia vero quis laborum doloremque culpa rerum aperiam. Recusandae velit laborum nulla neque similique minima fugit. Inventore laborum sequi.
+						</p>
+
+						<!-- Tags -->
+						<ul class="project-tags">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>jQuery</li>
+							<li>Logo</li>
+							<li>PHP</li>
+						</ul>
+
+						<!-- Links -->
+						<div class="row project-links">
+							<div class="six columns">
+								Website Link
+							</div>
+							<div class="six columns">
+								Case Study
+							</div>
+						</div><!-- / .project-links -->
+
+					</div><!-- / .project-details -->
+
+				</div><!-- / #project-3 -->
+
+		</section><!-- / #work -->
+
+		<!-- ABOUT -->
+		<section id="about" class="container sixteen colgrid">
+
+			<div class="container">
+
+				<h3>Who I am</h3>
+
+					<!-- Resume -->
+					<div class="six columns">
+
+					</div>
+
+					<div class="four columns">
+
+					</div>
+
+					<div class="six columns">
+
+					</div>
+
+			</div><!-- / .container -->
+
+		</section><!-- / #about -->
+
+		<!-- CONTACT -->
+		<section id="contact">
+
+			<h3>Let's get in touch</h3>
+
+				<!-- Contact Form -->
+				<div class="six columns">
+
+				</div>
+
+				<!-- Contact Details -->
+				<div class="six columns">
+
+				</div>
+
+		</section><!-- / #contact -->
+
+		<!-- Footer -->
+		<footer class="container">
+			<div class="row">
+				Back to Top
+				<p>
+					Copyright &copy; 2013 Pixel Hippie Creative
+				</p>
+				<ul>
+					<li>
+						Made on a <a href="http://www.apple.com/mac/">Mac</a>
+					</li>
+				</ul>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>jQuery</li>
+				</ul>
+				<p>fin</p>
+			</div>
+		</footer>
+
+	</div><!-- / .container -->
+
+
+
+	<!-- JavaScript -->
+
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<script src="js/libs/gumby.js"></script>
+	<script src="js/libs/ui/gumby.retina.js"></script>
+	<script src="js/libs/ui/gumby.fixed.js"></script>
+	<script src="js/libs/ui/gumby.skiplink.js"></script>
+	<script src="js/libs/ui/gumby.toggleswitch.js"></script>
+	<script src="js/libs/ui/gumby.checkbox.js"></script>
+	<script src="js/libs/ui/gumby.radiobtn.js"></script>
+	<script src="js/libs/ui/gumby.tabs.js"></script>
+	<script src="js/libs/ui/jquery.validation.js"></script>
+
+	<script src="js/libs/gumby.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Change UA-XXXXX-X to be your site's ID -->
+	<script>
+		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+		Modernizr.load({
+			load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+		});
+	</script>
+
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+
+</body>
+</html>
