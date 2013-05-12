@@ -57,13 +57,11 @@
 		.tab-content {background: gray;}
 
 		footer {background: #4B4D50; color: #FFF;}
-		li:after {content: "/";}
-			li:last-child:after {content: none;}
-			#nav li:after, #main-social li:after, #services li:after, #slider1 li:after {content: none;}
 	</style>
 
 	<!-- Scripts -->
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
 </head>
 
 <body>
@@ -290,28 +288,28 @@
 					<!-- Project 1 Showcase -->
 					<div class="six columns project-showcase">
 						<div id="slider1" class="rslides_container">
-							<ul class="rslides transparent-btns transparent-btns2" style="max-width: 800px;">
-							<li id="transparent-btns2_s0" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;" class="transparent-btns2_on">
-								<img src="img/1.jpg" alt="">
-							</li>
-							<li id="transparent-btns2_s1" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
-								<img src="img/2.jpg" alt="">
-							</li>
-							<li id="transparent-btns2_s2" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
-								<img src="img/3.jpg" alt="">
-							</li>
+							<ul class="rslides">
+								<li>
+									<img src="img/1.jpg" alt="">
+								</li>
+								<li>
+									<img src="img/2.jpg" alt="">
+								</li>
+								<li>
+									<img src="img/3.jpg" alt="">
+								</li>
 							</ul>
-							<a href="#" class="transparent-btns_nav transparent-btns2_nav prev">Previous</a>
-							<a href="#" class="transparent-btns_nav transparent-btns2_nav next">Next</a>
-							<ul class="transparent-btns_tabs transparent-btns2_tabs">
-								<li class="transparent-btns2_s1 transparent-btns_here">
-									<a href="#" class="transparent-btns2_s1">1</a>
+							<a href="#" class="transparent-btns_nav prev">Previous</a>
+							<a href="#" class="transparent-btns_nav next">Next</a>
+							<ul class="transparent-btns_tabs">
+								<li>
+									<a href="#">1</a>
 								</li>
-								<li class="transparent-btns2_s2">
-									<a href="#" class="transparent-btns2_s2">2</a>
+								<li>
+									<a href="#">2</a>
 								</li>
-								<li class="transparent-btns2_s3">
-									<a href="#" class="transparent-btns2_s3">3</a>
+								<li>
+									<a href="#">3</a>
 								</li>
 							</ul>
 						</div>
@@ -333,10 +331,10 @@
 						<!-- Links -->
 						<div class="row project-links">
 							<div class="six columns">
-								Website Link
+								<a href="">Website Link</a>
 							</div>
 							<div class="six columns">
-								Case Study
+								<a href="">Case Study</a>
 							</div>
 						</div>
 					</div><!-- / .project-details -->
@@ -366,10 +364,10 @@
 						<!-- Links -->
 						<div class="row project-links">
 							<div class="six columns">
-								Website Link
+								<a href="">Website Link</a>
 							</div>
 							<div class="six columns">
-								Case Study
+								<a href="">Case Study</a>
 							</div>
 						</div>
 					</div><!-- / .project-details -->
@@ -403,10 +401,10 @@
 						<!-- Links -->
 						<div class="row project-links">
 							<div class="six columns">
-								Website Link
+								<a href="">Website Link</a>
 							</div>
 							<div class="six columns">
-								Case Study
+								<a href="">Case Study</a>
 							</div>
 						</div><!-- / .project-links -->
 
@@ -497,12 +495,22 @@
 	<script src="js/libs/ui/gumby.radiobtn.js"></script>
 	<script src="js/libs/ui/gumby.tabs.js"></script>
 	<script src="js/libs/ui/jquery.validation.js"></script>
-
-	<script src="js/responsiveslides.min.js"></script>
-
 	<script src="js/libs/gumby.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// Slideshow 1
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "transparent-btns"
+      });
+	</script>
 
 	<!-- Change UA-XXXXX-X to be your site's ID -->
 	<script>
