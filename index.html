@@ -35,7 +35,7 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/gumby.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/responsiveslides.css">
 	<style>
 		body {background: #EEE; color: #FFF;}
 		.navbar {margin-bottom: 0;}
@@ -59,7 +59,7 @@
 		footer {background: #4B4D50; color: #FFF;}
 		li:after {content: "/";}
 			li:last-child:after {content: none;}
-		#nav li:after, #main-social li:after, #services li:after {content: none;}
+			#nav li:after, #main-social li:after, #services li:after, #slider1 li:after {content: none;}
 	</style>
 
 	<!-- Scripts -->
@@ -121,7 +121,9 @@
 						I<i class="icon-heart"></i>crafting bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
 					</p>
 					<p>
-						<a href="#work">see my work</a> -or- <a href="#contact">drop me a line</a>
+						<a href="#work" class="skip" gumby-goto="#work" gumby-duration="1000">see my work</a>
+						-or-
+						<a href="#contact" class="skip" gumby-goto="#contact" gumby-duration="1000">drop me a line</a>
 					</p>
 				</div>
 			</div><!-- / #intro -->
@@ -203,53 +205,73 @@
 							 	<li class="active">
 							 		<a href="#">
 							 			Discover
-							 				<i class="icon-plus"></i>
+							 				<br />
+							 			<i class="icon-plus"></i>
+							 				<br />
 							 			Plan
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
 							 			Conceptualize
-							 				<i class="icon-plus"></i>
+							 				<br />
+							 			<i class="icon-plus"></i>
+							 				<br />
 							 			Visualize
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
 							 			Develop
-							 				<i class="icon-plus"></i>
+							 				<br />
+							 			<i class="icon-plus"></i>
+							 				<br />
 							 			Deploy
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
 							 			Test
-							 				<i class="icon-plus"></i>
+							 				<br />
+							 			<i class="icon-plus"></i>
+							 				<br />
 							 			Launch
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
 							 			Promote
-							 				<i class="icon-plus"></i>
+							 				<br />
+							 			<i class="icon-plus"></i>
+							 				<br />
 							 			Measure
 							 		</a>
 							 	</li>
 							 </ul>
 							 <div class="tab-content active">
-								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+								 <p>
+									 Kickoff, Consultation, Needs, Assessment, User Base Review, Research & Study, Information Architecture, Technical Setup, Style Guide, Strategic Direction
+								 </p>
 							 </div>
 							 <div class="tab-content">
-								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus.</p>
+								 <p>
+									 Concept, Prototype, Visual Design, Interaction/Interface Design, Test
+								 </p>
 							 </div>
 							 <div class="tab-content">
-								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+								 <p>
+									 Framework/Foundation, Theme/Templates, Internal Review, Test
+								 </p>
 							 </div>
 							 <div class="tab-content">
-								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+								 <p>
+									 Testing, Final Review, Training, Release Plan, Transfer, Launch
+								 </p>
 							 </div>
 							 <div class="tab-content">
-								 <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus...</p>
+								 <p>
+									 Online Marketing, Bug Tracking, Analytics, Case Study, Success Evaluation
+								 </p>
 							 </div>
 						</div><!-- / #process-overview -->
 					</div>
@@ -265,8 +287,34 @@
 				<!-- Project 1 -->
 				<div id="project-1" class="row">
 
+					<!-- Project 1 Showcase -->
 					<div class="six columns project-showcase">
-						<!-- // PROJECT SHOWCASE SLIDER \\ -->
+						<div id="slider1" class="rslides_container">
+							<ul class="rslides transparent-btns transparent-btns2" style="max-width: 800px;">
+							<li id="transparent-btns2_s0" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;" class="transparent-btns2_on">
+								<img src="img/1.jpg" alt="">
+							</li>
+							<li id="transparent-btns2_s1" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+								<img src="img/2.jpg" alt="">
+							</li>
+							<li id="transparent-btns2_s2" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+								<img src="img/3.jpg" alt="">
+							</li>
+							</ul>
+							<a href="#" class="transparent-btns_nav transparent-btns2_nav prev">Previous</a>
+							<a href="#" class="transparent-btns_nav transparent-btns2_nav next">Next</a>
+							<ul class="transparent-btns_tabs transparent-btns2_tabs">
+								<li class="transparent-btns2_s1 transparent-btns_here">
+									<a href="#" class="transparent-btns2_s1">1</a>
+								</li>
+								<li class="transparent-btns2_s2">
+									<a href="#" class="transparent-btns2_s2">2</a>
+								</li>
+								<li class="transparent-btns2_s3">
+									<a href="#" class="transparent-btns2_s3">3</a>
+								</li>
+							</ul>
+						</div>
 					</div><!-- / .project-showcase -->
 
 					<div class="six columns project-details">
@@ -299,7 +347,7 @@
 				<div id="project-2" class="row">
 
 					<div class="six columns project-showcase">
-						<!-- // PROJECT SHOWCASE SLIDER \\ -->
+
 					</div><!-- / .project-showcase -->
 
 					<div class="six columns project-details">
@@ -449,6 +497,8 @@
 	<script src="js/libs/ui/gumby.radiobtn.js"></script>
 	<script src="js/libs/ui/gumby.tabs.js"></script>
 	<script src="js/libs/ui/jquery.validation.js"></script>
+
+	<script src="js/responsiveslides.min.js"></script>
 
 	<script src="js/libs/gumby.min.js"></script>
 	<script src="js/plugins.js"></script>
