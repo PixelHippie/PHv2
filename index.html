@@ -59,8 +59,9 @@
 		.tab-content {background: gray;}
 
 		#work .image {margin-bottom: 0;}
-		.project-details {border-left: 1px solid #FFF; padding-left: 2.10526%;}
 		.project-links {text-align: left; margin-top: 24px;}
+
+		.picker {width: 99%;}
 
 		footer {background: #4B4D50; color: #FFF; text-align: center;}
 	</style>
@@ -453,19 +454,79 @@
 		</section><!-- / #about -->
 
 		<!-- CONTACT -->
-		<section id="contact">
+		<section id="contact" class="container">
 
 			<h3>Let's get in touch</h3>
 
+			<div class="row">
+
 				<!-- Contact Form -->
 				<div class="six columns">
-
+					<h4>Send a Message</h4>
+					<form>
+						<ul>
+							<li class="field">
+								<label for="name">Name</label>
+								<input id="name" class="text input" type="text" placeholder="John Doe">
+							</li>
+							<li class="field">
+								<label for="email">Email</label>
+								<input id="email" class="email input" type="email" placeholder="john.doe@example.com">
+							</li>
+							<li class="field">
+								<label for="subject">Subject</label>
+								<div id="subject" class="picker">
+									<select>
+										<option value="#" disabled>What is the reason for this message?</option>
+										<option>I just want to say hi!</option>
+										<option>I'd like to inquire about hiring you.</option>
+									</select>
+								</div>
+							</li>
+							<li class="field">
+								<label for="message">Message</label>
+								<textarea id="message" class="input textarea" placeholder="Your message here..." rows="3"></textarea>
+							</li>
+						</ul>
+						<div class="medium metro rounded default btn">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
 				</div>
 
 				<!-- Contact Details -->
 				<div class="six columns">
+					<h4>Details</h4>
+					<div class="row">
+						<div class="four columns">
+							<p>
+								<a href="mailto:hello@pixelhippie.com">
+									hello@pixelhippie.com
+								</a>
+							</p>
+						</div>
+						<div class="four columns">
+							<p>
+								Las Vegas, NV
+							</p>
+						</div>
+						<div class="four columns">
+							<p>
+								<a href="http://client.pixelhippie.com/">
+									Client Login
+								</a>
+							</p>
+						</div>
+					</div>
 
+					<div class="map">
+						<div class="image rounded">
+							<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+						</div>
+					</div>
 				</div>
+
+			</div>
 
 		</section><!-- / #contact -->
 
