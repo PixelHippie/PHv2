@@ -7,7 +7,6 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  border: 3px solid #FFF;
   }
 
 .rslides li {
@@ -30,7 +29,7 @@
   height: auto;
   float: left;
   width: 100%;
-  border: 0;
+  border: 3px solid #FFF;
   }
 
 /****************************************/
@@ -67,7 +66,7 @@
   }
 
 .transparent-btns_tabs {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   }
 

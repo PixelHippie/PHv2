@@ -38,12 +38,14 @@
 	<link rel="stylesheet" href="css/responsiveslides.css">
 	<style>
 		body {background: #EEE; color: #FFF;}
+		.row {margin-bottom: 20px;}
+			#nav .row {margin-bottom: 0;}
 		.navbar {margin-bottom: 0;}
-		#main-content .row {text-align: center;}
-		section {margin: 250px 0;}
+		.centered {text-align: center;}
+		section {margin: 300px 0;}
 			#contact {margin-bottom: 0;}
 		#branding, #work, #contact {background: #B1B429;}
-		#branding, #work, #contact, footer .row {padding: 250px 0;}
+		#branding, #work, #contact, footer .row {padding: 300px 0;}
 		#logo, #tagline {font-weight: 900; text-transform: uppercase;}
 		h3 {text-align: center; margin: 1em;}
 			h3:before, h3:after {content: " ----------- "}
@@ -56,7 +58,11 @@
 		.service-group {background: gray;}
 		.tab-content {background: gray;}
 
-		footer {background: #4B4D50; color: #FFF;}
+		#work .image {margin-bottom: 0;}
+		.project-details {border-left: 1px solid #FFF; padding-left: 2.10526%;}
+		.project-links {text-align: left; margin-top: 24px;}
+
+		footer {background: #4B4D50; color: #FFF; text-align: center;}
 	</style>
 
 	<!-- Scripts -->
@@ -71,19 +77,19 @@
 		<div class="row">
 			<a class="toggle" gumby-trigger="#nav > .row > ul" href="#"><i class="icon-menu"></i></a>
 			<h1 class="four columns logo">
-				<a href="#branding">
-					<img src="img/nav-logo.png" alt="Pixel Leaf Logo" gumby-retina />
+				<a href="#branding" class="skip" gumby-goto="top" gumby-duration="1000">
+					<img src="img/nav-logo.png" alt="Pixel Hippie Creative Logo" gumby-retina />
 				</a>
 			</h1>
 			<ul class="eight columns">
 				<li>
-					<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">Services</a>
+					<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-300" gumby-duration="1000">Services</a>
 				</li>
 				<li>
 					<a href="#work" class="skip" gumby-goto="#work" gumby-duration="1000">Work</a>
 				</li>
 				<li>
-					<a href="#about" class="skip" gumby-goto="#about" gumby-offset="-250" gumby-duration="1000">About</a>
+					<a href="#about" class="skip" gumby-goto="#about" gumby-offset="-300" gumby-duration="1000">About</a>
 				</li>
 				<li>
 					<a href="#contact" class="skip" gumby-goto="#contact" gumby-duration="1000">Contact</a>
@@ -114,10 +120,10 @@
 			<div id="intro" class="row">
 				<div class="seven columns centered">
 					<p>
-						Hey, I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-250" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
+						Hey, I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-300" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
 					</p>
 					<p>
-						I<i class="icon-heart"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
+						I<i class="icon-heart"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-300" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
 					</p>
 					<p>
 						<a href="#work" class="skip" gumby-goto="#work" gumby-duration="1000">see my work</a>
@@ -199,7 +205,7 @@
 			<h3>How I do it</h3>
 				<div id="process-overview" class="row">
 					<div class="nine columns centered">
-						<div class="pill tabs">
+						<div class="tabs">
 							 <ul class="tab-nav">
 							 	<li class="active">
 							 		<a href="#">
@@ -291,13 +297,19 @@
 						<div id="slider1" class="rslides_container">
 							<ul class="rslides">
 								<li>
-									<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+									<div class="image rounded">
+										<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+									</div>
 								</li>
 								<li>
-									<img src="img/project_spotlight-desktop.jpg" alt="Design Spotlight - Desktop">
+									<div class="image rounded">
+										<img src="img/project_spotlight-desktop.jpg" alt="Design Spotlight - Desktop">
+									</div>
 								</li>
 								<li>
-									<img src="img/project_spotlight-mobile.jpg" alt="Design Spotlight - Mobile">
+									<div class="image rounded">
+										<img src="img/project_spotlight-mobile.jpg" alt="Design Spotlight - Mobile">
+									</div>
 								</li>
 							</ul>
 							<a href="#" class="transparent-btns_nav prev">Previous</a>
@@ -331,11 +343,15 @@
 						</ul>
 						<!-- Links -->
 						<div class="row project-links">
-							<div class="six columns">
-								<a href="">Website Link</a>
+							<div class="four columns">
+								<div class="medium metro rounded btn default">
+									<a href="">Website Link</a>
+								</div>
 							</div>
-							<div class="six columns">
-								<a href="">Case Study</a>
+							<div class="push_five three columns">
+								<div class="medium metro rounded btn default">
+									<a href="">Case Study</a>
+								</div>
 							</div>
 						</div>
 					</div><!-- / .project-details -->
@@ -346,7 +362,38 @@
 				<div id="project-2" class="row">
 
 					<div class="six columns project-showcase">
-
+						<div id="slider1" class="rslides_container">
+							<ul class="rslides">
+								<li>
+									<div class="image rounded">
+										<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+									</div>
+								</li>
+								<li>
+									<div class="image rounded">
+										<img src="img/project_spotlight-desktop.jpg" alt="Design Spotlight - Desktop">
+									</div>
+								</li>
+								<li>
+									<div class="image rounded">
+										<img src="img/project_spotlight-mobile.jpg" alt="Design Spotlight - Mobile">
+									</div>
+								</li>
+							</ul>
+							<a href="#" class="transparent-btns_nav prev">Previous</a>
+							<a href="#" class="transparent-btns_nav next">Next</a>
+							<ul class="transparent-btns_tabs">
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+							</ul>
+						</div>
 					</div><!-- / .project-showcase -->
 
 					<div class="six columns project-details">
@@ -364,54 +411,20 @@
 						</ul>
 						<!-- Links -->
 						<div class="row project-links">
-							<div class="six columns">
-								<a href="">Website Link</a>
+							<div class="four columns">
+								<div class="medium metro rounded btn default">
+									<a href="">Website Link</a>
+								</div>
 							</div>
-							<div class="six columns">
-								<a href="">Case Study</a>
+							<div class="push_five three columns">
+								<div class="medium metro rounded btn default">
+									<a href="">Case Study</a>
+								</div>
 							</div>
 						</div>
 					</div><!-- / .project-details -->
 
 				</div><!-- / #project-2 -->
-
-				<!-- Project 3 -->
-				<div id="project-3" class="row">
-
-					<div class="six columns project-showcase">
-						<!-- // PROJECT SHOWCASE SLIDER \\ -->
-					</div><!-- / .project-showcase -->
-
-					<div class="six columns project-details">
-
-						<h4>Project Title</h4>
-
-						<!-- Description -->
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam temporibus consequatur officia vero quis laborum doloremque culpa rerum aperiam. Recusandae velit laborum nulla neque similique minima fugit. Inventore laborum sequi.
-						</p>
-
-						<!-- Tags -->
-						<ul class="project-tags">
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>jQuery</li>
-							<li>Logo</li>
-							<li>PHP</li>
-						</ul>
-
-						<!-- Links -->
-						<div class="row project-links">
-							<div class="six columns">
-								<a href="">Website Link</a>
-							</div>
-							<div class="six columns">
-								<a href="">Case Study</a>
-							</div>
-						</div><!-- / .project-links -->
-
-					</div><!-- / .project-details -->
-
-				</div><!-- / #project-3 -->
 
 		</section><!-- / #work -->
 
@@ -523,15 +536,15 @@
 
 	<script src="js/responsiveslides.min.js"></script>
 	<script>
-		// Slideshow 1
-      $("#slider1").responsiveSlides({
-        auto: false,
-        pager: true,
-        nav: true,
-        speed: 500,
-        maxwidth: 800,
-        namespace: "transparent-btns"
-      });
+		// Slideshow
+		$("#slider1").responsiveSlides({
+			auto: false,
+			pager: true,
+			nav: true,
+			speed: 500,
+			maxwidth: 800,
+			namespace: "transparent-btns"
+		});
 	</script>
 
 	<!-- Change UA-XXXXX-X to be your site's ID -->
