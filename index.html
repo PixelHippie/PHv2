@@ -45,21 +45,30 @@
 		section {margin: 300px 0;}
 			#contact {margin-bottom: 0;}
 		#branding, #work, #contact {background: #B1B429;}
-		#branding, #work, #contact, footer .row {padding: 300px 0;}
-		#logo, #tagline {font-weight: 900; text-transform: uppercase;}
+		#branding {padding: 200px 0 300px;}
+		#work, #contact, footer .row {padding: 300px 0;}
+		#tagline {font-weight: 900; text-transform: uppercase;}
 		h3 {text-align: center; margin: 1em;}
 			h3:before, h3:after {content: " ----------- "}
-		.project-details {text-align: left;}
-		.project-tags li {display: inline;}
+
 		footer li {display: inline;}
 		h1.logo>a>img {height: 60px;}
-		#main-social li {display: inline;}
+		#nav li>a {font-weight: 900;text-transform: uppercase;}
+
+		#main-logo {background: url(img/main-logo.png) top center no-repeat;background-size: 80%; text-indent: -9999em;height: 200px;margin-bottom: 1rem;}
+
+		#main-social, #main-social ul {margin-bottom: 5px;}
+		#main-social li {display: inline;padding-right: 1rem;}
+			#main-social li:last {padding-right: 0;}
+		#dribbble-callout {height: 200px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100px;}
 
 		.service-group {background: gray;}
-		.tab-content {background: gray;}
+		.tab-content {background: gray;height: 9rem;}
 
 		#work .image {margin-bottom: 0;}
 		.project-links {text-align: left; margin-top: 24px;}
+		.project-details {text-align: left;}
+		.project-tags li {display: inline;}
 
 		.picker {width: 99%;}
 		#avatar {height: 250px;}
@@ -112,7 +121,7 @@
 			<!-- Hero -->
 			<div id="hero" class="row">
 				<div class="special head ten columns centered">
-					<h1 id="logo">
+					<h1 id="main-logo">
 						Pixel Hippie Creative
 					</h1>
 					<h2 id="tagline">
@@ -161,6 +170,12 @@
 				</div>
 			</div><!-- / #main-social -->
 
+			<!-- Dribbble Invite Callout -->
+			<div class="row">
+				<div id="dribbble-callout" class="two columns centered">
+				</div>
+			</div>
+
 		</header><!-- / #branding -->
 
 		<!-- SERVICES -->
@@ -186,8 +201,8 @@
 							<h4>Develop</h4>
 							<ul>
 								<li><acronym title="HyperText Markup Language">HTML5</acronym> &amp; <acronym title="Cascading Style Sheets">CSS3</acronym></li>
-								<li><acronym title="Hypertext Preprocessor">PHP</acronym> &amp; MySQL</li>
 								<li>Sass &amp; Compass</li>
+								<li><acronym title="Hypertext Preprocessor">PHP</acronym> &amp; MySQL</li>
 								<li><acronym title="JavaScript">JS</acronym> & jQuery</li>
 							</ul>
 						</div>
@@ -209,58 +224,38 @@
 			<!-- Process Overview -->
 			<h3>How I do it</h3>
 				<div id="process-overview" class="row">
-					<div class="nine columns centered">
-						<div class="tabs">
+					<div class="ten columns centered">
+						<div class="pill tabs">
 							 <ul class="tab-nav">
 							 	<li class="active">
 							 		<a href="#">
-							 			Discover
-							 				<br />
-							 			<i class="icon-plus"></i>
-							 				<br />
-							 			Plan
+							 			Discover &amp; Plan
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
-							 			Conceptualize
-							 				<br />
-							 			<i class="icon-plus"></i>
-							 				<br />
-							 			Visualize
+							 			Conceptualize &amp; Visualize
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
-							 			Develop
-							 				<br />
-							 			<i class="icon-plus"></i>
-							 				<br />
-							 			Deploy
+							 			Develop &amp; Deploy
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
-							 			Test
-							 				<br />
-							 			<i class="icon-plus"></i>
-							 				<br />
-							 			Launch
+							 			Test &amp; Launch
 							 		</a>
 							 	</li>
 							 	<li>
 							 		<a href="#">
-							 			Promote
-							 				<br />
-							 			<i class="icon-plus"></i>
-							 				<br />
-							 			Measure
+							 			Promote &amp; Measure
 							 		</a>
 							 	</li>
 							 </ul>
 							 <div class="tab-content active">
 								 <p>
-									 Kickoff, Consultation, Needs, Assessment, User Base Review, Research & Study, Information Architecture, Technical Setup, Style Guide, Strategic Direction
+									 To get started, we'll meet for a consultation to assess your needs. Once we have our initial direction, we'll review the audience and user base. Then it's research, research, research. We'll need to establish the content before we go any further. During this stage, I'll also set up all the technical stuff. Then it's on to creating a style guide and we finish off with our strategic direction review.
 								 </p>
 							 </div>
 							 <div class="tab-content">
@@ -449,19 +444,19 @@
 							<div class="skiller col">
 								<ul id="skill">
 									<li>
-										<span class="expand html5"> <small>%70</small></span><em>HTML 5</em>
+										<span class="expand html5"></span><em>HTML 5</em>
 									</li>
 									<li>
-										<span class="expand css3"> <small>%90</small></span><em>CSS 3</em>
+										<span class="expand css3"></span><em>CSS 3</em>
 									</li>
 									<li>
-										<span class="expand jquery"> <small>%50</small></span><em>jQuery</em>
+										<span class="expand jquery"></span><em>jQuery</em>
 									</li>
 									<li>
-										<span class="expand photoshop"> <small>%10</small></span><em>Photoshop</em>
+										<span class="expand illustrator"></span><em>Illustrator</em>
 									</li>
 									<li>
-										<span class="expand dreamweaver"> <small>%100</small></span><em>Dreamweaver</em>
+										<span class="expand wordpress"></span><em>WordPress</em>
 									</li>
 								</ul>
 							</div>
@@ -583,17 +578,17 @@
 							</li>
 							<li class="">
 								<a href="">
-									<i class="icon-forrst"></i>
+									<i class="icon-cancel-squared"></i>
 								</a>
 							</li>
 							<li class="">
 								<a href="">
-									<i class="icon-codepen"></i>
+									<i class="icon-cancel-squared"></i>
 								</a>
 							</li>
 							<li class="">
 								<a href="">
-									<i class="icon-coderbits"></i>
+									<i class="icon-cancel-squared"></i>
 								</a>
 							</li>
 							<li class="">

@@ -116,20 +116,20 @@
 #skill span { color:#fff; padding-bottom:3px;}
 .expand {background:#B2B536;height: 20px;position: absolute;left: 0;}
 
-.html5       { width:70%;  -moz-animation:html5 2s ease-out;       -webkit-animation:html5 2s ease-out;        }
+.html5       { width:99%;  -moz-animation:html5 2s ease-out;       -webkit-animation:html5 2s ease-out;        }
 .css3        { width:90%;  -moz-animation:css3 2s ease-out;        -webkit-animation:css3 2s ease-out;         }
 .jquery      { width:50%; -moz-animation: jquery 2s ease-out;   -webkit-animation: jquery 2s ease-out;      }
-.photoshop   { width:10%;  -moz-animation:photoshop 2s ease-out;   -webkit-animation:photoshop 2s ease-out;    }
-.dreamweaver { width:99%; -moz-animation:dreamweaver 2s ease-out; -webkit-animation:dreamweaver 2s ease-out;  }
+.illustrator   { width:40%;  -moz-animation:illustrator 2s ease-out;   -webkit-animation:illustrator 2s ease-out;    }
+.wordpress { width:60%; -moz-animation:wordpress 2s ease-out; -webkit-animation:wordpress 2s ease-out;  }
 
-@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}   }
+@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:99%;}   }
 @-moz-keyframes css3        { 0%  { width:0px;} 100%{ width::90%;}	}
 @-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width::50%;}	}
-@-moz-keyframes photoshop   { 0%  { width:0px;} 100%{ width::10%;}	}
-@-moz-keyframes dreamweaver { 0%  { width:0px;} 100%{ width::100%;}	}
+@-moz-keyframes illustrator   { 0%  { width:0px;} 100%{ width::40%;}	}
+@-moz-keyframes wordpress { 0%  { width:0px;} 100%{ width::60%;}	}
 
-@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:99%;}  }
 @-webkit-keyframes css3        { 0%  { width:0px;} 100%{ width::90%;} }
 @-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width::50%;} }
-@-webkit-keyframes photoshop   { 0%  { width:0px;} 100%{ width::10%;} }
-@-webkit-keyframes dreamweaver { 0%  { width:0px;} 100%{ width::100%;} }
+@-webkit-keyframes illustrator   { 0%  { width:0px;} 100%{ width::40%;} }
+@-webkit-keyframes wordpress { 0%  { width:0px;} 100%{ width::60%;} }
