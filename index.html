@@ -63,7 +63,6 @@
 
 		#main-social, #main-social ul {margin-bottom: 5px;}
 		#main-social li {display: inline;padding-right: 1rem;}
-			#main-social li:last {padding-right: 0;}
 		#dribbble-callout {height: 200px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100px;}
 
 		.service-group {background: gray;}
@@ -79,8 +78,14 @@
 		.picker {width: 99%;}
 		#code-skills {text-align: right;}
 		#tool-skills {text-align: left;}
+		#avatar div {border: 2px solid #444;}
 		#avatar img {width: 100%;}
 		#bio p {color: #111; text-align: justify;}
+
+		/*#contact .columns .row {background: gray; height: 5rem;}*/
+		#contact .wide {width: 100%;}
+		#contact-form {background: gray; padding: 1rem;}
+		#map div {background: gray;padding: 1rem;}
 
 		footer {background: #4B4D50; color: #FFF; text-align: center;}
 	</style>
@@ -571,19 +576,18 @@
 			<div class="row">
 
 				<!-- Contact Form -->
-				<div class="six columns">
-					<h4>Send a Message</h4>
+				<div id="contact-form" class="six columns">
 					<form>
 						<ul>
-							<li class="field">
+							<li class="field row">
 								<label for="name">Name</label>
 								<input id="name" class="text input" type="text" placeholder="John Doe">
 							</li>
-							<li class="field">
+							<li class="field row">
 								<label for="email">Email</label>
 								<input id="email" class="email input" type="email" placeholder="john.doe@example.com">
 							</li>
-							<li class="field">
+							<li class="field row">
 								<label for="subject">Subject</label>
 								<div id="subject" class="picker">
 									<select>
@@ -593,50 +597,83 @@
 									</select>
 								</div>
 							</li>
-							<li class="field">
+							<li class="field row">
 								<label for="message">Message</label>
 								<textarea id="message" class="input textarea" placeholder="Your message here..." rows="4"></textarea>
 							</li>
 						</ul>
-						<div class="medium metro rounded default btn">
-							<input type="submit" value="Submit">
+						<div class="row">
+							<div class="three columns centered">
+								<div class="medium metro rounded btn success">
+									<input type="submit" value="SEND">
+								</div>
+							</div>
 						</div>
 					</form>
 				</div>
 
 				<!-- Contact Details -->
-				<div class="six columns">
-					<h4>Details</h4>
+				<div id="contact-details" class="six columns">
 					<div class="row">
-						<div class="four columns">
+						<div class="six columns">
 							<p>
 								<a href="mailto:hello@pixelhippie.com">
+									<i class="icon-mail"></i>
 									hello@pixelhippie.com
 								</a>
 							</p>
 						</div>
-						<div class="four columns">
+						<div class="six columns">
 							<p>
+								<i class="icon-location"></i>
 								Las Vegas, NV
 							</p>
 						</div>
-						<div class="four columns">
-							<p>
-								<a href="http://client.pixelhippie.com/">
-									Client Login
-								</a>
-							</p>
+					</div><!-- / .row -->
+
+					<div class="info alert">
+						Existing client? Log on to your services here!
+					</div>
+
+					<div class="row">
+						<div class="five columns">
+							<div class="medium metro rounded wide btn default icon-left entypo icon-login">
+								<a href="http://client.pixelhippie.com/">PH&#124;Client Login</a>
+							</div>
+						</div>
+						<div class="push_two five columns">
+							<div class="medium metro rounded wide btn default icon-left entypo icon-login">
+								<a href="http://hosting.pixelhippie.com/">PH &#124; Hosting Login</a>
+							</div>
+						</div>
+					</div><!-- / .row -->
+
+					<div class="info alert">
+								New client? Fill out this brief!
+							</div>
+
+					<div class="row">
+						<div class="twelve columns">
+							<div class="medium metro rounded wide btn default">
+								<a class="typeform-share link" href="http://pixelhippie.typeform.com/to/CmWAMy" data-mode="2" target="_blank">New Project Brief</a>
+								<script>
+									(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
+								</script>
+							</div>
 						</div>
 					</div>
 
-					<div class="map">
-						<div class="image rounded">
-							<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+					<div class="row">
+						<div id="map" class="twelve columns">
+							<div class="image rounded">
+								<img src="img/map-placeholder.png" alt="Responsive Design Overview - All Devices">
+							</div>
 						</div>
 					</div>
-				</div>
 
-			</div>
+				</div><!-- / #contact-details -->
+
+			</div><!-- / .row -->
 
 		</section><!-- / #contact -->
 
