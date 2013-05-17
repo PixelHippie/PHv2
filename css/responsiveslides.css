@@ -105,31 +105,42 @@
 
 /* Skills Bars */
 
-#skill-tree {display: block;width: 99%;height: 250px;}
-.skimiler{width: 99%;}
+.skimiler{width: 100%;}
 .skiller {margin: 0;font-size: 12px;line-height: 2em;position: absolute;}
 .col {width:100%;margin-top:1rem;}
-#skill {list-style: none outside none;}
-#skill li {background:#4B4D50;height: 23px;margin-bottom: 20px;width: 99%;}
-#skill li em { position:relative; top:-22px; color: #111;}
-#skill li small { margin-left:10px;}
-#skill span { color:#fff; padding-bottom:3px;}
-.expand {background:#B2B536;height: 20px;position: absolute;left: 0;}
+.skills {list-style: none outside none;}
+.skills li {background:#4B4D50;height: 23px;margin-bottom: 20px;width: 100%;}
+.skills li em { position:relative; top:-22px; color: #111;}
+.skills span { color:#fff; padding-bottom:3px;}
+.expand {background:#B2B536;height: 20px;position: absolute;right: 0;}
+	#tool-skills .expand {background:#B2B536;height: 20px;position: absolute;left: 0;}
 
-.html5       { width:99%;  -moz-animation:html5 2s ease-out;       -webkit-animation:html5 2s ease-out;        }
-.css3        { width:90%;  -moz-animation:css3 2s ease-out;        -webkit-animation:css3 2s ease-out;         }
-.jquery      { width:50%; -moz-animation: jquery 2s ease-out;   -webkit-animation: jquery 2s ease-out;      }
-.illustrator   { width:40%;  -moz-animation:illustrator 2s ease-out;   -webkit-animation:illustrator 2s ease-out;    }
-.wordpress { width:60%; -moz-animation:wordpress 2s ease-out; -webkit-animation:wordpress 2s ease-out;  }
+.html5       { width:100%; -moz-animation: html5 	2s ease-out; -webkit-animation: html5 	2s ease-out; }
+.css3        { width: 90%; -moz-animation: css3 	2s ease-out; -webkit-animation: css3 	2s ease-out; }
+.jquery      { width: 50%; -moz-animation: jquery 	2s ease-out; -webkit-animation: jquery 	2s ease-out; }
+.php  		 { width: 40%; -moz-animation: php 		2s ease-out; -webkit-animation: php 	2s ease-out; }
 
-@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:99%;}   }
+.photoshop   { width: 20%; -moz-animation: photoshop   2s ease-out; -webkit-animation: photoshop   2s ease-out; }
+.illustrator { width: 40%; -moz-animation: illustrator 2s ease-out; -webkit-animation: illustrator 2s ease-out; }
+.wordpress   { width: 60%; -moz-animation: wordpress   2s ease-out; -webkit-animation: wordpress   2s ease-out; }
+.gumby       { width: 50%; -moz-animation: gumby       2s ease-out; -webkit-animation: gumby       2s ease-out; }
+
+@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:100%;}  }
 @-moz-keyframes css3        { 0%  { width:0px;} 100%{ width::90%;}	}
 @-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width::50%;}	}
-@-moz-keyframes illustrator   { 0%  { width:0px;} 100%{ width::40%;}	}
-@-moz-keyframes wordpress { 0%  { width:0px;} 100%{ width::60%;}	}
+@-moz-keyframes php   		{ 0%  { width:0px;} 100%{ width::40%;}	}
 
-@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:99%;}  }
+@-moz-keyframes photoshop   { 0%  { width:0px;} 100%{ width::20%;}  }
+@-moz-keyframes illustrator { 0%  { width:0px;} 100%{ width::40%;}	}
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width::60%;}	}
+@-moz-keyframes gumby       { 0%  { width:0px;} 100%{ width::50%;}	}
+
+@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:100%;} }
 @-webkit-keyframes css3        { 0%  { width:0px;} 100%{ width::90%;} }
 @-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width::50%;} }
-@-webkit-keyframes illustrator   { 0%  { width:0px;} 100%{ width::40%;} }
-@-webkit-keyframes wordpress { 0%  { width:0px;} 100%{ width::60%;} }
+@-webkit-keyframes php		   { 0%  { width:0px;} 100%{ width::40%;} }
+
+@-webkit-keyframes photoshop   { 0%  { width:0px;} 100%{ width::20%;}  }
+@-webkit-keyframes illustrator { 0%  { width:0px;} 100%{ width::40%;}	}
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width::60%;}	}
+@-webkit-keyframes gumby       { 0%  { width:0px;} 100%{ width::50%;}	}
