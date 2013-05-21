@@ -48,7 +48,7 @@
 			#contact {margin-bottom: 0;}
 		#branding, #work, #contact {background: #B1B429;}
 		#branding {padding: 100px 0 300px;}
-		#work, #contact, footer .row {padding: 300px 0;}
+		#work, #contact {padding: 300px 0;}
 		#tagline {font-weight: 900; text-transform: uppercase;}
 		h3 {text-align: center; margin: 1em;}
 			h3:before, h3:after {content: " ----------- "}
@@ -71,6 +71,7 @@
 		.tab-content {background: #4B4D50;height: 9rem;}
 
 		#work .image {margin-bottom: 0;}
+		#work p {text-align: justify;}
 		#project-1 {margin-bottom: 50px;}
 		#project-2 .project-details {text-align: right;}
 		.project-links {text-align: left; margin-top: 24px;}
@@ -90,6 +91,8 @@
 		#map div {background: #4B4D50;padding: 1rem;}
 
 		footer {background: #4B4D50; color: #FFF; text-align: center;}
+			#colophon {padding-top: 100px !important;padding-bottom: 300px !important;}
+				#scroll-top {margin-bottom: 300px;}
 	</style>
 
 	<!-- Scripts -->
@@ -360,13 +363,13 @@
 			</div><!-- / #project-1 -->
 
 			<!-- Project 2 (Mountain Bike Maps) -->
-			<div id="project-2" class="row">
+			<div id="project-2" class="row work-alt">
 
 				<!-- Project 2 Details -->
 				<div class="six columns project-details">
 					<h4>Mountain Bike Maps</h4>
 					<!-- Description -->
-					<p class="justify">For this project, I collaborated with graphic designer, John Williams of jFiveDesign, to bring his personal project to life. John had the brand image, graphic elements, and color palette down on his initial release, but he lacked the code structure and modern practices. I helped bring the site up-to-date with a new layout and all-new code framework that John could build upon. I helped implement a JavaScript map for the home page and advised him on best practices, semantics, and accessibility.
+					<p>For this project, I collaborated with graphic designer, John Williams of jFiveDesign, to bring his personal project to life. John had the brand image, graphic elements, and color palette down on his initial release, but he lacked the code structure and modern practices. I helped bring the site up-to-date with a new layout and all-new code framework that John could build upon. I helped implement a JavaScript map for the home page and advised him on best practices, semantics, and accessibility.
 					</p>
 					<!-- Tags -->
 					<ul class="project-tags">
@@ -682,46 +685,61 @@
 		</section><!-- / #contact -->
 
 		<!-- Footer -->
-		<footer class="container">
+		<footer id="colophon" class="container">
 			<div class="row">
-				<p>
-					<a href="#" class="skip" gumby-goto="top" gumby-duration="1000"><i class="icon-up-bold"></i><br />Back to Top</a>
-				</p>
-				<p>
-					Copyright &copy; 2013 Pixel Hippie Creative
-				</p>
-				<ul>
-					<li>
-						Made on a <a href="http://www.apple.com/mac/">Mac</a>
-					</li>
-					<li>
-						Developed in <a href="http://www.panic.com/coda">Coda 2</a>
-					</li>
-					<li>
-						<a href="">Git</a> for version control
-					</li>
-					<li>
-						<a href="">Gumby 2</a> CSS Framework
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<a href="">HTML5</a>
-					</li>
-					<li>
-						<a href="">CSS3</a>
-					</li>
-					<li>
-						<a href="">PHP</a>
-					</li>
-					<li>
-						<a href="">jQuery</a>
-					</li>
-				</ul>
-				<p>v2.0</p>
-				<p>fin</p>
+				<div class="three columns centered">
+					<p id="scroll-top">
+						<a href="#" class="skip" gumby-goto="top" gumby-duration="1000"><i class="icon-up-bold"></i><br />Back to Top</a>
+					</p>
+				</div>
 			</div>
-		</footer>
+			<div class="row">
+				<div class="eight columns centered">
+					<p>
+						Copyright &copy; 2013 Pixel Hippie Creative
+					</p>
+					<ul>
+						<li><i class="icon-cc"></i></li>
+						<li><i class="icon-cc-by"></i></li>
+						<li><i class="icon-cc-nc"></i></li>
+						<li><i class="icon-cc-nd"></i></li>
+					</ul>
+					<p>
+						<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>
+					</p>
+					<ul>
+						<li>
+							Made on a <a href="http://www.apple.com/mac/">Mac</a>
+						</li>
+						<li>
+							Developed in <a href="http://www.panic.com/coda">Coda 2</a>
+						</li>
+						<li>
+							<a href="">Git</a> for version control
+						</li>
+						<li>
+							<a href="">Gumby 2</a> CSS Framework
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">HTML5</a>
+						</li>
+						<li>
+							<a href="">CSS3</a>
+						</li>
+						<li>
+							<a href="">PHP</a>
+						</li>
+						<li>
+							<a href="">jQuery</a>
+						</li>
+					</ul>
+					<p>v2.0 beta</p>
+					<p>fin</p>
+				</div>
+			</div>
+		</footer><!-- / #colophon -->
 
 	</div><!-- / #main-content -->
 
