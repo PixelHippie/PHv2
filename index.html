@@ -36,9 +36,13 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/gumby.css">
 	<link rel="stylesheet" href="css/responsiveslides.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.totop.css" />
 	<style>
+		@import url(http://fonts.googleapis.com/css?family=Yellowtail);
 		body {background: #EEE; color: #FFF;}
-		.row {margin-bottom: 20px;}
+		.row {margin-bottom: 20px;padding-left: 24px;padding-right: 24px;}
+			.row .row {padding-left: 0;padding-right: 0;}
 			#nav .row {margin-bottom: 0;}
 		.navbar {margin-bottom: 0;}
 		.centered {text-align: center;}
@@ -49,23 +53,24 @@
 		#branding, #work, #contact {background: #B1B429;}
 		#branding {padding: 100px 0 300px;}
 		#work, #contact {padding: 300px 0;}
-		#tagline {font-weight: 900; text-transform: uppercase;}
 		h3 {text-align: center; margin: 1em;}
 			h3:before, h3:after {content: " ----------- "}
+			h3{font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;}
 
-		footer li {display: inline;}
+
 
 		.navbar .logo a {padding-left: 0;}
 		h1.logo>a>img {height: 60px;}
 		#nav li>a {font-weight: 900;text-transform: uppercase;}
 
-		#main-logo {background: url(img/main-logo.png) top center no-repeat;background-size: 80%; text-indent: -9999em;height: 200px;margin-bottom: 1rem;}
-
+		#main-logo {background: url(img/main-logo.png) center center no-repeat;background-size: 90%; text-indent: -9999em;height: 250px;margin-bottom: 1rem;}
+		#intro p {font-size: 1.5rem;}
+		#intro a:hover {background: #EEE;border-radius: 3px;}
 		#main-social, #main-social ul {margin-bottom: 5px;}
 		#main-social li {display: inline;padding-right: 1rem;}
 		#dribbble-callout {height: 200px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100px;}
 
-		.service-group {background: #4B4D50;border-radius: 50%;padding: 2rem 0;}
+		.service-group {background: #4B4D50;border-radius: 4px;padding: 8px 10px;}
 		.service-group h4, .service-group acronym {color: #EEE;}
 		.service-group h4 {text-transform: uppercase;font-weight: 900;}
 		.tab-content {background: #4B4D50;height: 9rem;}
@@ -91,6 +96,7 @@
 		#map div {background: #4B4D50;padding: 1rem;}
 
 		footer {background: #4B4D50; color: #FFF; text-align: center;}
+			footer li {display: inline;}
 			#colophon {padding-top: 100px !important;padding-bottom: 300px !important;}
 				#scroll-top {margin-bottom: 300px;}
 	</style>
@@ -106,14 +112,16 @@
 	<nav id="nav" class="navbar" gumby-fixed="top">
 		<div class="row">
 			<a class="toggle" gumby-trigger="#nav > .row > ul" href="#"><i class="icon-menu"></i></a>
+			<!--
 			<h1 class="four columns logo">
 				<a href="#branding" class="skip" gumby-goto="top" gumby-duration="1000">
 					<img src="img/nav-logo.png" alt="Pixel Hippie Creative Logo" gumby-retina />
 				</a>
 			</h1>
-			<ul class="eight columns">
+			-->
+			<ul class="twelve columns">
 				<li>
-					<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-300" gumby-duration="1000">Services</a>
+					<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">Services</a>
 				</li>
 				<li>
 					<a href="#work" class="skip" gumby-goto="#work" gumby-offset="+150" gumby-duration="1000">Work</a>
@@ -122,7 +130,7 @@
 					<a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">About</a>
 				</li>
 				<li>
-					<a href="#contact" class="skip" gumby-goto="#contact" gumby-duration="1000">Contact</a>
+					<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -140,25 +148,22 @@
 					<h1 id="main-logo">
 						Pixel Hippie Creative
 					</h1>
-					<h2 id="tagline">
-						Design &amp; Development
-					</h2>
 				</div>
 			</div><!-- / #hero -->
 
 			<!-- Intro -->
 			<div id="intro" class="row">
-				<div class="seven columns centered">
+				<div class="ten columns centered">
 					<p>
 						Hey, I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
 					</p>
 					<p>
-						I<i class="icon-heart"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-300" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
+						I<i class="icon-heart"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
 					</p>
 					<p>
 						<a href="#work" class="skip" gumby-offset="+150" gumby-goto="#work" gumby-duration="1000">see my work</a>
 						-or-
-						<a href="#contact" class="skip" gumby-goto="#contact" gumby-duration="1000">drop me a line</a>
+						<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">drop me a line</a>
 					</p>
 				</div>
 			</div><!-- / #intro -->
@@ -199,37 +204,40 @@
 			<!-- Services Overview -->
 			<h3>What I do</h3>
 			<div id="services-overview" class="row">
-				<div class="nine columns centered">
+				<div class="eight columns centered">
 					<div class="four columns">
 						<div id="service1" class="service-group">
 							<h4>Design</h4>
+							<hr />
 							<ul>
 								<li>Responsive</li>
 								<li>Branding &amp; Identity</li>
 								<li>Typography</li>
-								<li><acronym title="User Interface">UI</acronym>/<acronym title="User Experience">UX</acronym></li>
+								<li>UI &amp; UX</li>
 							</ul>
 						</div>
 					</div>
 					<div class="four columns">
 						<div id="service1" class="service-group">
 							<h4>Develop</h4>
+							<hr />
 							<ul>
-								<li><acronym title="HyperText Markup Language">HTML5</acronym> &amp; <acronym title="Cascading Style Sheets">CSS3</acronym></li>
+								<li>HTML5 &amp; CSS3</li>
 								<li>Sass &amp; Compass</li>
-								<li><acronym title="Hypertext Preprocessor">PHP</acronym> &amp; MySQL</li>
-								<li><acronym title="JavaScript">JS</acronym> & jQuery</li>
+								<li>PHP &amp; MySQL</li>
+								<li>JS &amp; jQuery</li>
 							</ul>
 						</div>
 					</div>
 					<div class="four columns">
 						<div id="service1" class="service-group">
 							<h4>Promote</h4>
+							<hr />
 							<ul>
 								<li>Advertising</li>
 								<li>Online Marketing</li>
 								<li>Social</li>
-								<li><acronym title="Search Engine Optimization">SEO</acronym></li>
+								<li>SEO</li>
 							</ul>
 						</div>
 					</div>
@@ -493,83 +501,92 @@
 
 			</div><!-- / #bio -->
 
+			<!-- Interests -->
+			<div id="interest-icons" class="row">
+				<ul class="twelve columns">
+					<li class="one column rounded image">
+						<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+				</ul>
+			</div><!-- / #interest-icons -->
+
+			<!-- All Social -->
 			<div class="row">
-
-				<!-- Interests -->
-				<div id="interest-icons" class="six columns">
-					<h4>My interests...</h4>
-					<ul class="five_up tiles">
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-					</ul>
-				</div><!-- / #interest-icons -->
-
-				<!-- All Social -->
-				<div id="all-social" class="six columns">
-					<h4>Stalk me...</h4>
-					<ul class="five_up tiles">
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-						<li class="rounded image">
-							<img src="img/img_silence_demo.jpg">
-						</li>
-					</ul>
-				</div><!-- / #all-social -->
-
-			</div><!-- / .row -->
+				<h4 class="three columns centered">Follow Me!</h4>
+			</div>
+			<div id="all-social" class="row">
+				<ul class="ten columns centered">
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+					<li class="one column rounded image">
+						<img src="img/img_silence_demo.jpg">
+					</li>
+				</ul>
+			</div><!-- / #all-social -->
 
 		</section><!-- / #about -->
 
@@ -773,6 +790,37 @@
 			speed: 500,
 			maxwidth: 800,
 			namespace: "transparent-btns"
+		});
+	</script>
+
+	<!-- Tooltipster -->
+	<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+				delay: 300,
+				fixedWidth: 200,
+				maxWidth: 200,
+				interactive: true,
+				speed: 500,
+			});
+        });
+    </script>
+
+    <!-- ToTop -->
+    <script type="text/javascript" src="js/jquery.ui.totop.min.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			var defaults = {
+	  			containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+	 		};
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
 		});
 	</script>
 
