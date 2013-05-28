@@ -44,41 +44,46 @@
 		.row {margin-bottom: 20px;padding-left: 24px;padding-right: 24px;}
 			.row .row {padding-left: 0;padding-right: 0;}
 			#nav .row {margin-bottom: 0;}
-		.navbar {margin-bottom: 0;}
 		.centered {text-align: center;}
 			.justify {text-align: justify;}
 		.flt-rt {float: right;}
 		section {margin: 300px 0;}
 			#contact {margin-bottom: 0;}
 		#branding, #work, #contact {background: #B1B429;}
-		#branding {padding: 100px 0 300px;}
+		#branding {padding: 0 0 300px 0;}
 		#work, #contact {padding: 300px 0;}
-		h3 {text-align: center; margin: 1em;}
-			h3:before, h3:after {content: " ----------- "}
+		h3 {text-align: center; margin: 1em 0;}
+			h3:before, h3:after {content: " ----- "}
 			h3{font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;}
+		.li-divider li:after {content: "|";font-size: 1.2rem;}
+			.li-divider li:last-child:after {content: none;}
+		a {color: #66670D;}
+			a:hover {color: #fff;}
+		/* Transitions */
+		a, .btn, #all-social li {-webkit-transition: 0.4s linear;-moz-transition: 0.4s linear;-o-transition: 0.4s linear;-ms-transition: 0.4s linear;transition: 0.4s linear;}
 
-
+		#main-logo {background: url(img/main-logo.png) center center no-repeat;background-size: 90%; text-indent: -9999em;height: 250px;margin: 2rem;}
 
 		.navbar .logo a {padding-left: 0;}
+		h1.logo {color: #fff;font-size: 1rem;}
 		h1.logo>a>img {height: 60px;}
-		#nav li>a {font-weight: 900;text-transform: uppercase;}
+		#nav-logo a:hover:after {content: "Home";}
+		#nav li>a {font-weight: bold;text-transform: uppercase;}
 
-		#main-logo {background: url(img/main-logo.png) center center no-repeat;background-size: 90%; text-indent: -9999em;height: 250px;margin-bottom: 1rem;}
+		#intro {margin-top: 366666666666666rem;}
 		#intro p {font-size: 1.5rem;}
-		#intro a:hover {background: #EEE;border-radius: 3px;}
-		#main-social, #main-social ul {margin-bottom: 5px;}
-		#main-social li {display: inline;padding-right: 1rem;}
-		#dribbble-callout {height: 200px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100px;}
+		#dribbble-callout {height: 300px;width:100%;max-width: 140px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100%;}
 
-		.service-group {background: #4B4D50;border-radius: 4px;padding: 8px 10px;}
-		.service-group h4, .service-group acronym {color: #EEE;}
-		.service-group h4 {text-transform: uppercase;font-weight: 900;}
-		.tab-content {background: #4B4D50;height: 9rem;}
+		.service-group {background: #B2B536;border-radius: 4px;padding: 8px 10px;}
+		.service-group h4 {color: #fff;background: #66670D;text-transform: uppercase;font-weight: bold;border-radius: 4px;margin-bottom: 1rem;}
+		.tabs.pill .tab-nav {margin-bottom: 1rem;border-radius: 4px;}
+			.tabs .tab-nav > li > a {background: #66670D;color: #fff;}
+				.tabs .tab-nav > li.active > a {background: #7b7e15;color: #fff;}
+				.tabs .tab-nav > li > a:hover {background: #7b7e15;color: #fff;}
+		.tab-content {background: #B2B536;height: 9rem;border-radius: 4px;}
 
 		#work .image {margin-bottom: 0;}
-		#work p {text-align: justify;}
 		#project-1 {margin-bottom: 50px;}
-		#project-2 .project-details {text-align: right;}
 		.project-links {text-align: left; margin-top: 24px;}
 		.project-details {text-align: left;}
 		.project-tags li {display: inline;}
@@ -88,17 +93,29 @@
 		#avatar div {border: 2px solid #4B4D50;}
 		#avatar img {width: 100%;}
 		#bio p {color: #111; text-align: justify;}
+		#personal-details ul {background: #B2B536;border-radius: 4px;}
+			#personal-details i {color: #66670D;}
+		#Facebook{background: #3B5998;}#Behance{background: #1769FF;}#GitHub {background: #4183C4;}#LinkedIn {background: #007FB1;}#Twitter {background: #00ACED;}#Forrst {background: #5B9A68;}#Spotify {background: #80B719;}#Stack-Overflow {background: #F47920;}#Google-Plus {background: #D14836;}#Dribbble {background: #EA4C89;}#DeviantART {background: #4B5D50;}#Codepen {background: #231F20;}
+			#all-social li {opacity: 0.5;}
+				#all-social li:hover {opacity: 1;}
 
-		#contact {background: #B1B429 url(img/map-placeholder.png) no-repeat center center;background-size: 150%;}
-		#contact .wide {width: 100%;}
-		#contact-form {background: #4B4D50; padding: 0.5rem;}
-		.picker{display: block;margin: 0;}
-		#map div {background: #4B4D50;padding: 1rem;}
+		#contact {background: #B1B429 url(img/map-placeholder.png) no-repeat center center;background-size: 120%;}
+		#contact-form {background: rgba(102,103,13,0.7);padding: 0 2.10526%;border-radius: 4px;}
+			#contact-form h4 {color: #fff;margin-bottom: 1rem;}
+			#contact-form input {width: 82.98246%;}
+			.picker{display: block;margin: 0;width: 82.98246%;}
+				.picker select {width: 100%;}
+			textarea {width: auto;}
 
-		footer {background: #4B4D50; color: #FFF; text-align: center;}
+		#contact .wide {width: 80%;}
+		#contact-details h4 {margin-bottom: 1rem;}
+		#contact-details li.row {margin-bottom: 0;}
+		#contact-details h5, #contact-details p {display: inline-block;}
+
+		footer {background: #4B4D50; color: #aaa; text-align: center;}
 			footer li {display: inline;}
-			#colophon {padding-top: 100px !important;padding-bottom: 300px !important;}
-				#scroll-top {margin-bottom: 300px;}
+			#colophon {padding-top: 300px !important;padding-bottom: 300px !important;}
+			#fin {margin-top: 100px;font-size: 2.2rem;}
 	</style>
 
 	<!-- Scripts -->
@@ -108,39 +125,38 @@
 
 <body>
 
-	<!-- Main Navigation -->
-	<nav id="nav" class="navbar" gumby-fixed="top">
-		<div class="row">
-			<a class="toggle" gumby-trigger="#nav > .row > ul" href="#"><i class="icon-menu"></i></a>
-			<!--
-			<h1 class="four columns logo">
-				<a href="#branding" class="skip" gumby-goto="top" gumby-duration="1000">
-					<img src="img/nav-logo.png" alt="Pixel Hippie Creative Logo" gumby-retina />
-				</a>
-			</h1>
-			-->
-			<ul class="twelve columns">
-				<li>
-					<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">Services</a>
-				</li>
-				<li>
-					<a href="#work" class="skip" gumby-goto="#work" gumby-offset="+150" gumby-duration="1000">Work</a>
-				</li>
-				<li>
-					<a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">About</a>
-				</li>
-				<li>
-					<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav><!-- / #nav -->
-
 	<!-- Main Content -->
 	<div id="main-content">
 
 		<!-- Branding -->
 		<header id="branding" class="container">
+
+			<!-- Main Navigation -->
+			<nav id="nav" class="navbar" gumby-fixed="top">
+				<div class="row">
+					<a class="toggle" gumby-trigger="#nav > .row > ul" href="#"><i class="icon-menu"></i></a>
+					<h1 id="nav-logo" class="two columns logo">
+						<a href="#branding" class="skip" gumby-goto="top" gumby-duration="1000">
+							<img src="img/nav-logo.png" alt="Pixel Hippie Creative Logo" gumby-retina />
+							Home
+						</a>
+					</h1>
+					<ul class="ten columns">
+						<li>
+							<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">Services</a>
+						</li>
+						<li>
+							<a href="#work" class="skip" gumby-goto="#work" gumby-offset="+150" gumby-duration="1000">Work</a>
+						</li>
+						<li>
+							<a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">About</a>
+						</li>
+						<li>
+							<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav><!-- / #nav -->
 
 			<!-- Hero -->
 			<div id="hero" class="row">
@@ -170,31 +186,28 @@
 
 			<!-- Main Social -->
 			<div id="main-social" class="row">
-				<div class="six columns centered">
-					<ul class="row">
-						<li class="four coulumns">
+				<div class="five columns centered">
+					<div class="row">
+						<div class="four columns">
 							<div class="medium metro rounded btn default icon-left entypo icon-twitter">
 								<a href="#">Twitter</a>
 							</div>
-						</li>
-						<li class="four coulumns">
+						</div>
+						<div class="four columns">
 							<div class="medium metro rounded btn default icon-left entypo icon-dribbble">
 								<a href="#">Dribbble</a>
 							</div>
-						</li>
-						<li class="four coulumns">
+							<!-- Dribbble Invite Callout -->
+							<div id="dribbble-callout"></div>
+						</div>
+						<div class="four columns">
 							<div class="medium metro rounded btn default icon-left entypo icon-github">
 								<a href="#">GitHub</a>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div><!-- / #main-social -->
-
-			<!-- Dribbble Invite Callout -->
-			<div class="row">
-				<div id="dribbble-callout" class="two columns centered"></div>
-			</div>
 
 		</header><!-- / #branding -->
 
@@ -208,7 +221,6 @@
 					<div class="four columns">
 						<div id="service1" class="service-group">
 							<h4>Design</h4>
-							<hr />
 							<ul>
 								<li>Responsive</li>
 								<li>Branding &amp; Identity</li>
@@ -220,7 +232,6 @@
 					<div class="four columns">
 						<div id="service1" class="service-group">
 							<h4>Develop</h4>
-							<hr />
 							<ul>
 								<li>HTML5 &amp; CSS3</li>
 								<li>Sass &amp; Compass</li>
@@ -232,7 +243,6 @@
 					<div class="four columns">
 						<div id="service1" class="service-group">
 							<h4>Promote</h4>
-							<hr />
 							<ul>
 								<li>Advertising</li>
 								<li>Online Marketing</li>
@@ -371,37 +381,7 @@
 			</div><!-- / #project-1 -->
 
 			<!-- Project 2 (Mountain Bike Maps) -->
-			<div id="project-2" class="row work-alt">
-
-				<!-- Project 2 Details -->
-				<div class="six columns project-details">
-					<h4>Mountain Bike Maps</h4>
-					<!-- Description -->
-					<p>For this project, I collaborated with graphic designer, John Williams of jFiveDesign, to bring his personal project to life. John had the brand image, graphic elements, and color palette down on his initial release, but he lacked the code structure and modern practices. I helped bring the site up-to-date with a new layout and all-new code framework that John could build upon. I helped implement a JavaScript map for the home page and advised him on best practices, semantics, and accessibility.
-					</p>
-					<!-- Tags -->
-					<ul class="project-tags">
-						<li class="info label">HTML5</li>
-						<li class="info label">CSS3</li>
-						<li class="info label">jQuery</li>
-						<li class="info label">Consultation</li>
-					</ul>
-					<!-- Links -->
-					<div class="row project-links">
-						<div class="push_eight four columns">
-							<div class="medium metro rounded btn default flt-rt">
-								<a href="http://mountainbikemaps.com/">Website Link</a>
-							</div>
-						</div>
-						<!--
-						<div class="push_five three columns">
-							<div class="medium metro rounded btn default">
-								<a href="">Case Study</a>
-							</div>
-						</div>
-						-->
-					</div>
-				</div><!-- / .project-details -->
+			<div id="project-2" class="row">
 
 				<!-- Project 2 Showcase -->
 				<div class="six columns project-showcase">
@@ -425,6 +405,36 @@
 						</ul>
 					</div><!-- / .rslides_container -->
 				</div><!-- / .project-showcase -->
+
+				<!-- Project 2 Details -->
+				<div class="six columns project-details">
+					<h4>Mountain Bike Maps</h4>
+					<!-- Description -->
+					<p>For this project, I collaborated with graphic designer, John Williams of jFiveDesign, to bring his personal project to life. John had the brand image, graphic elements, and color palette down on his initial release, but he lacked the code structure and modern practices. I helped bring the site up-to-date with a new layout and all-new code framework that John could build upon. I helped implement a JavaScript map for the home page and advised him on best practices, semantics, and accessibility.
+					</p>
+					<!-- Tags -->
+					<ul class="project-tags">
+						<li class="info label">HTML5</li>
+						<li class="info label">CSS3</li>
+						<li class="info label">jQuery</li>
+						<li class="info label">Consultation</li>
+					</ul>
+					<!-- Links -->
+					<div class="row project-links">
+						<div class="four columns">
+							<div class="medium metro rounded btn default">
+								<a href="http://mountainbikemaps.com/">Website Link</a>
+							</div>
+						</div>
+						<!--
+						<div class="push_five three columns">
+							<div class="medium metro rounded btn default">
+								<a href="">Case Study</a>
+							</div>
+						</div>
+						-->
+					</div>
+				</div><!-- / .project-details -->
 
 			</div><!-- / #project-2 -->
 
@@ -501,6 +511,30 @@
 
 			</div><!-- / #bio -->
 
+			<!-- Personal Details -->
+			<div id="personal-details" class="row">
+				<ul class="twelve columns">
+					<li class="two columns">
+						<i class="icon-calendar"></i>Age: 23
+					</li>
+					<li class="two columns">
+						<i class="icon-monitor"></i>Mac Pro
+					</li>
+					<li class="two columns">
+						<i class="icon-mobile"></i>iPhone 4
+					</li>
+					<li class="two columns">
+						<i class="icon-user"></i>Hair: Red
+					</li>
+					<li class="two columns">
+						<i class="icon-eye"></i>Eyes: Green
+					</li>
+					<li class="two columns">
+						<i class="icon-calendar"></i>Age: 23
+					</li>
+				</ul>
+			</div><!-- / #personal-details -->
+
 			<!-- Interests -->
 			<div id="interest-icons" class="row">
 				<ul class="twelve columns">
@@ -549,41 +583,65 @@
 			</div>
 			<div id="all-social" class="row">
 				<ul class="ten columns centered">
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Facebook" class="one column rounded image">
+						<a href="http://www.facebook.com/PixelHippie" title="Facebook">
+							<img src="img/facebook.png" alt="Facebook">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Behance" class="one column rounded image">
+						<a href="http://www.behance.net/PixelHippie" title="Behance">
+							<img src="img/behance.png" alt="Behance">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="GitHub" class="one column rounded image">
+						<a href="https://github.com/PixelHippie" title="GitHub">
+							<img src="img/github.png" alt="GitHub">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="LinkedIn" class="one column rounded image">
+						<a href="www.linkedin.com/pub/austin-cooper/66/7ab/b34" title="LinkedIn">
+							<img src="img/linkedin.png" alt="LinkedIn">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Twitter" class="one column rounded image">
+						<a href="https://twitter.com/PixelHippie" title="Twitter">
+							<img src="img/twitter.png" alt="Twitter">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Forrst" class="one column rounded image">
+						<a href="http://forrst.com/people/PixelHippie" title="Forrst">
+							<img src="img/forrst.png" alt="Forrst">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Spotify" class="one column rounded image">
+						<a href="https://play.spotify.com/user/pixelhippie" title="Spotify">
+							<img src="img/spotify.png" alt="Spotify">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Stack-Overflow" class="one column rounded image">
+						<a href="http://stackoverflow.com/users/2424216/pixelhippie" title="Stack Overflow">
+							<img src="img/stackoverflow.png" alt="Stack Overflow">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Google-Plus" class="one column rounded image">
+						<a href="https://plus.google.com/112033696338122754283/" title="Google+">
+							<img src="img/googleplus.png" alt="Google+">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Dribbble" class="one column rounded image">
+						<a href="http://dribbble.com/PixelHippie" title="Dribbble">
+							<img src="img/dribbble.png" alt="Dribbble">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="DeviantART" class="one column rounded image">
+						<a href="http://pixelhippie.deviantart.com/" title="DeviantART">
+							<img src="img/deviantart.png" alt="DeviantART">
+						</a>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li id="Codepen" class="one column rounded image">
+						<a href="http://codepen.io/PixelHippie" title="Codepen">
+							<img src="img/codepen.png" alt="Codepen">
+						</a>
 					</li>
 				</ul>
 			</div><!-- / #all-social -->
@@ -593,107 +651,106 @@
 		<!-- CONTACT -->
 		<section id="contact" class="container">
 
-			<h3>Let's get in touch</h3>
+			<h3>How to get in touch</h3>
 
 			<div class="row">
 
 				<!-- Contact Form -->
-				<div id="contact-form" class="six columns">
-					<form>
+				<div id="contact-form" class="seven columns">
+					<h4>Send a message</h4>
+					<form action="contact-form.php" method="post">
 						<ul>
-							<li class="field">
-								<label class="info label" for="name">Name</label>
-								<input id="name" class="text input" type="text" placeholder="John Doe">
+							<li class="field row">
+								<label class="inline two columns" for="name">Name</label>
+								<input id="name" class="text input inline ten columns" type="text" placeholder="John Doe">
 							</li>
-							<li class="field">
-								<label class="info label" for="email">Email</label>
-								<input id="email" class="email input" type="email" placeholder="john.doe@example.com">
+							<li class="field row">
+								<label class="inline two columns" for="email">Email</label>
+								<input id="email" class="email input inline ten columns" type="email" placeholder="john.doe@example.com">
 							</li>
-							<li class="field">
-								<label class="info label" for="subject">Subject</label>
+							<li class="field row">
+								<label class="inline two columns" for="subject">Subject</label>
 								<div id="subject" class="picker">
 									<select>
-										<option value="#" disabled>What is the reason for this message?</option>
 										<option>I just want to say hi!</option>
 										<option>I'd like to inquire about hiring you.</option>
 									</select>
 								</div>
 							</li>
-							<li class="field">
-								<label class="info label" for="message">Message</label>
-								<textarea id="message" class="textarea input" placeholder="Your message here..." rows="6"></textarea>
+							<li class="field row">
+								<label class="inline two columns" for="message">Message</label>
+								<textarea id="message" class="textarea input ten columns" placeholder="Your message here..." rows="6"></textarea>
+							</li>
+							<li class="row">
+								<div class="push_two two columns">
+									<div class="medium metro rounded btn success">
+										<input type="submit" value="SEND">
+									</div>
+								</div>
 							</li>
 						</ul>
-						<div class="row">
-							<div class="three columns centered">
-								<div class="medium metro rounded btn success">
-									<input type="submit" value="SEND">
-								</div>
-							</div>
-						</div>
 					</form>
 				</div>
 
 				<!-- Contact Details -->
-				<div id="contact-details" class="six columns">
-					<div class="row">
-						<div class="six columns">
-							<p>
+				<div id="contact-details" class="five columns">
+					<h4>Get the details</h4>
+					<ul class="row">
+						<li class="row">
+							<h5 class="four columns">
+								<i class="icon-mail"></i>Email
+							</h5>
+							<p class="eight columns">
 								<a href="mailto:hello@pixelhippie.com">
-									<i class="icon-mail"></i>
 									hello@pixelhippie.com
 								</a>
 							</p>
-						</div>
-						<div class="six columns">
-							<p>
-								<i class="icon-location"></i>
+						</li>
+						<li class="row">
+							<h5 class="four columns">
+								<i class="icon-location"></i>Location
+							</h5>
+							<p class="eight columns">
 								Las Vegas, NV
 							</p>
-						</div>
-					</div><!-- / .row -->
+						</li>
+						<li class="row">
+							<h5 class="four columns">
+								<i class="icon-clock"></i>Timezone
+							</h5>
+							<p class="eight columns">
+								GMT -8:00 (PST)
+							</p>
+						</li>
+						<li class="row">
+							<h5 class="four columns">
+								<i class="icon-vcard"></i>vCard
+							</h5>
+							<p class="eight columns">
+								<a href="">Download</a>
+							</p>
+						</li>
+						<li class="row">
+							<h5 class="four columns">
+								<i class="icon-doc-text"></i>Resume
+							</h5>
+							<p class="eight columns">
+								<a href="">Download</a>
+							</p>
+						</li>
+					</ul>
 
-					<div class="info alert">
-						Existing client? Log on to your services here!
-					</div>
-
+					<h4>Login</h4>
 					<div class="row">
-						<div class="five columns">
-							<div class="medium metro rounded wide btn default icon-left entypo icon-login">
-								<a href="http://client.pixelhippie.com/">PH&#124;Client Login</a>
-							</div>
+						<div class="medium metro rounded wide btn default icon-left entypo icon-login">
+							<a href="http://client.pixelhippie.com/">PH&#124;Client Login</a>
 						</div>
-						<div class="push_two five columns">
-							<div class="medium metro rounded wide btn default icon-left entypo icon-login">
-								<a href="http://hosting.pixelhippie.com/">PH &#124; Hosting Login</a>
-							</div>
-						</div>
-					</div><!-- / .row -->
-
-					<div class="info alert">
-						New client? Fill out this brief!
 					</div>
-
 					<div class="row">
-						<div class="six columns centered">
-							<div class="medium metro rounded wide btn default">
-								<a class="typeform-share link" href="http://pixelhippie.typeform.com/to/CmWAMy" data-mode="2" target="_blank"><i class="icon-briefcase"></i> New Project Brief</a>
-								<script>
-									(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
-								</script>
-							</div>
+						<div class="medium metro rounded wide btn default icon-left entypo icon-login">
+							<a href="http://hosting.pixelhippie.com/">PH &#124; Hosting Login</a>
 						</div>
 					</div>
-
-					<!--
-					<div class="row">
-						<div id="map" class="twelve columns">
-							<div class="image rounded">
-								<img src="img/map-placeholder.png" alt="Responsive Design Overview - All Devices">
-							</div>
-						</div>
-					</div>
-					-->
 
 				</div><!-- / #contact-details -->
 
@@ -703,13 +760,6 @@
 
 		<!-- Footer -->
 		<footer id="colophon" class="container">
-			<div class="row">
-				<div class="three columns centered">
-					<p id="scroll-top">
-						<a href="#" class="skip" gumby-goto="top" gumby-duration="1000"><i class="icon-up-bold"></i><br />Back to Top</a>
-					</p>
-				</div>
-			</div>
 			<div class="row">
 				<div class="eight columns centered">
 					<p>
@@ -724,7 +774,7 @@
 					<p>
 						<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>
 					</p>
-					<ul>
+					<ul class="li-divider">
 						<li>
 							Made on a <a href="http://www.apple.com/mac/">Mac</a>
 						</li>
@@ -735,10 +785,10 @@
 							<a href="">Git</a> for version control
 						</li>
 						<li>
-							<a href="">Gumby 2</a> CSS Framework
+							Framework by <a href="">Gumby 2</a>
 						</li>
 					</ul>
-					<ul>
+					<ul class="li-divider">
 						<li>
 							<a href="">HTML5</a>
 						</li>
@@ -753,7 +803,7 @@
 						</li>
 					</ul>
 					<p>v2.0 beta</p>
-					<p>fin</p>
+					<p id="fin">fin</p>
 				</div>
 			</div>
 		</footer><!-- / #colophon -->
@@ -815,7 +865,7 @@
 			var defaults = {
 	  			containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
+				scrollSpeed: 200,
 				easingType: 'linear'
 	 		};
 
