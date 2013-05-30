@@ -59,28 +59,42 @@
 			.li-divider li:last-child:after {content: none;}
 		a {color: #66670D;}
 			a:hover {color: #fff;}
+
+		::selection, ::-moz-selection {background: #66670D;color: #fff;}
+
 		/* Transitions */
 		a, .btn, #all-social li {-webkit-transition: 0.4s linear;-moz-transition: 0.4s linear;-o-transition: 0.4s linear;-ms-transition: 0.4s linear;transition: 0.4s linear;}
 
 		#main-logo {background: url(img/main-logo.png) center center no-repeat;background-size: 90%; text-indent: -9999em;height: 250px;margin: 2rem;}
 
-		.navbar .logo a {padding-left: 0;}
-		h1.logo {color: #fff;font-size: 1rem;}
+		/* Navigation */
+		#nav {opacity: 0.8;-webkit-transition: 0.4s linear;-moz-transition: 0.4s linear;-o-transition: 0.4s linear;-ms-transition: 0.4s linear;transition: 0.4s linear;}
+			#nav:hover {opacity: 1;}
 		h1.logo>a>img {height: 60px;}
-		#nav-logo a:hover:after {content: "Home";}
-		#nav li>a {font-weight: bold;text-transform: uppercase;}
+		.navbar .logo a {padding-left: 0;}
+		h1.logo>a {opacity: 0.5;}
+			h1.logo>a:hover {opacity: 1;}
+		#nav li>a {font-weight: bold;text-transform: uppercase;opacity: 0.7;}
+			#nav li>a:hover {opacity: 1;}
+			#login:focus {opacity: 1;}
+		.navbar ul li:hover .dropdown {border-top: 1px solid #4B4D50;width: auto;border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+			.navbar li .dropdown ul li:last-child a {border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+			.navbar li .dropdown ul li a {background: #4B4D50;color: #fff;border-bottom: 1px solid #868d92;opacity: 1 !important;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
+				.navbar li .dropdown ul li a:hover {background: #868d92;}
 
 		#intro {margin-top: 366666666666666rem;}
 		#intro p {font-size: 1.5rem;}
 		#dribbble-callout {height: 300px;width:100%;max-width: 140px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100%;}
 
 		.service-group {background: #B2B536;border-radius: 4px;padding: 8px 10px;}
-		.service-group h4 {color: #fff;background: #66670D;text-transform: uppercase;font-weight: bold;border-radius: 4px;margin-bottom: 1rem;}
+			.service-group h4 {color: #fff;background: #66670D;text-transform: uppercase;font-weight: bold;border-radius: 4px;margin-bottom: 1rem;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
+			.service-group li {font-weight: bold;color: #444;}
 		.tabs.pill .tab-nav {margin-bottom: 1rem;border-radius: 4px;}
-			.tabs .tab-nav > li > a {background: #66670D;color: #fff;}
+			.tabs .tab-nav > li > a {background: #66670D;color: #fff;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
 				.tabs .tab-nav > li.active > a {background: #7b7e15;color: #fff;}
 				.tabs .tab-nav > li > a:hover {background: #7b7e15;color: #fff;}
-		.tab-content {background: #B2B536;height: 9rem;border-radius: 4px;}
+		.tabs .tab-content {background: #B2B536;height: auto;min-height: 9rem;border-radius: 4px;padding: 13px 20px;}
+			.tabs .tab-content p {margin-bottom: 0;}
 
 		#work .image {margin-bottom: 0;}
 		#project-1 {margin-bottom: 50px;}
@@ -92,7 +106,8 @@
 		#tool-skills {text-align: left;}
 		#avatar div {border: 2px solid #4B4D50;}
 		#avatar img {width: 100%;}
-		#bio p {color: #111; text-align: justify;}
+		#bio p {color: #444; text-align: justify;}
+		#bio span {font-weight: bold;}
 		#personal-details ul {background: #B2B536;border-radius: 4px;}
 			#personal-details i {color: #66670D;}
 		#Facebook{background: #3B5998;}#Behance{background: #1769FF;}#GitHub {background: #4183C4;}#LinkedIn {background: #007FB1;}#Twitter {background: #00ACED;}#Forrst {background: #5B9A68;}#Spotify {background: #80B719;}#Stack-Overflow {background: #F47920;}#Google-Plus {background: #D14836;}#Dribbble {background: #EA4C89;}#DeviantART {background: #4B5D50;}#Codepen {background: #231F20;}
@@ -108,12 +123,16 @@
 			textarea {width: auto;}
 
 		#contact .wide {width: 80%;}
-		#contact-details h4 {margin-bottom: 1rem;}
+		#contact-details h4 {margin-bottom: 0.5rem;}
 		#contact-details li.row {margin-bottom: 0;}
-		#contact-details h5, #contact-details p {display: inline-block;}
+		#contact-details h5 {display: inline-block;}
+		#contact-details span {font-size: 1.125rem;padding: 0.273em 0;line-height: 1.15538em;}
+		#contact-details .row .row {border-bottom: 1px solid #ccc;padding: 0.5rem 0;}
+			#contact-details .row .row:last-child {border-bottom: none;}
 
 		footer {background: #4B4D50; color: #aaa; text-align: center;}
 			footer li {display: inline;}
+			footer a {color: #B2B536;}
 			#colophon {padding-top: 300px !important;padding-bottom: 300px !important;}
 			#fin {margin-top: 100px;font-size: 2.2rem;}
 	</style>
@@ -138,10 +157,9 @@
 					<h1 id="nav-logo" class="two columns logo">
 						<a href="#branding" class="skip" gumby-goto="top" gumby-duration="1000">
 							<img src="img/nav-logo.png" alt="Pixel Hippie Creative Logo" gumby-retina />
-							Home
 						</a>
 					</h1>
-					<ul class="ten columns">
+					<ul class="nine columns">
 						<li>
 							<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">Services</a>
 						</li>
@@ -153,6 +171,19 @@
 						</li>
 						<li>
 							<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">Contact</a>
+						</li>
+						<li>
+							<a id="login" href="#"><i class="icon-login"></i> Login</a>
+							<div class="dropdown">
+								<ul>
+									<li>
+										<a href="http://client.pixelhippie.com/">PH &#124; Client</a>
+									</li>
+									<li>
+										<a href="http://hosting.pixelhippie.com/">PH &#124; Hosting</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -255,72 +286,76 @@
 			</div><!-- / #services-overview -->
 
 			<!-- Process Overview -->
-			<h3>How I do it</h3>
-				<div id="process-overview" class="row">
-					<div class="ten columns centered">
-						<div class="pill tabs">
-							 <ul class="tab-nav">
-							 	<li class="active">
-							 		<a href="#">
-							 			Discover &amp; Plan
-							 		</a>
-							 	</li>
-							 	<li>
-							 		<a href="#">
-							 			Conceptualize &amp; Visualize
-							 		</a>
-							 	</li>
-							 	<li>
-							 		<a href="#">
-							 			Develop &amp; Deploy
-							 		</a>
-							 	</li>
-							 	<li>
-							 		<a href="#">
-							 			Test &amp; Launch
-							 		</a>
-							 	</li>
-							 	<li>
-							 		<a href="#">
-							 			Promote &amp; Measure
-							 		</a>
-							 	</li>
-							 </ul>
-							 <div class="tab-content active">
-								 <p>
-									 To get started, we'll meet for a consultation to assess your needs. Once we have our initial direction, we'll review the audience and user base. Then it's research, research, research. We'll need to establish the content before we go any further. During this stage, I'll also set up all the technical stuff. Then it's on to creating a style guide and we finish off with our strategic direction review.
-								 </p>
-							 </div>
-							 <div class="tab-content">
-								 <p>
-									 Next, it's time to develop a concept to move forward on. With input from both parties, I'll design a low fidelity wireframe that encompasses basic layout, content structure, and visual flow. Then, we'll develop the visual style by encompassing elements from our style guide. Then, we'll fine tune our visual style for interaction. This includes buttons, links, and calls-to-action. I'll initiate some basic user testing as well to iron out any unsure elements.
-								 </p>
-							 </div>
-							 <div class="tab-content">
-								 <p>
-									 Actual development takes the longest as I use code to bring your project to life. I'll start out with the code boilerplate and framework to lay a foundation. If the design incorporates a CMS, it will be installed. If a base theme is being used or modified, it will be implemented. If the design will be completely custom, I'll use HTML, CSS, JS, and PHP to develop it. I'll constantly review and improve my work. I don't cut corners. More user testing will be completed at this stage as well.
-								 </p>
-							 </div>
-							 <div class="tab-content">
-								 <p>
-									 One development is complete, final testing will be initiated on the production-ready website. This will take place in a development environment. Together, we'll go through the final review and develop a release plan. Any training will be completed before launch. After much hard work, we can finally transfer all the files and rights and launch your website!
-								 </p>
-							 </div>
-							 <div class="tab-content">
-								 <p>
-									 It doesn't stop there. A website is never truly done. Upon launch, I'll ensure that all SEO requirements are met and any marketing strategies are implemented. I'll also track and handle any usability issues and bugs. Analytics will be set up, monitored, and aggregated so that any issues arising will be dealt with. I'll write a case study for the Success Evaluation so we can see just how effective the new website is.
-								 </p>
-							 </div>
-						</div><!-- / .pill tabs -->
-					</div>
-				</div><!-- / #process-overview -->
+			<div class="row">
+				<h3>How I do it</h3>
+			</div>
+			<div id="process-overview" class="row">
+				<div class="ten columns centered">
+					<div class="pill tabs">
+						 <ul class="tab-nav">
+						 	<li class="active">
+						 		<a href="#">
+						 			Discover &plus; Plan
+						 		</a>
+						 	</li>
+						 	<li>
+						 		<a href="#">
+						 			Conceptualize &plus; Visualize
+						 		</a>
+						 	</li>
+						 	<li>
+						 		<a href="#">
+						 			Develop &plus; Deploy
+						 		</a>
+						 	</li>
+						 	<li>
+						 		<a href="#">
+						 			Test &plus; Launch
+						 		</a>
+						 	</li>
+						 	<li>
+						 		<a href="#">
+						 			Promote &plus; Measure
+						 		</a>
+						 	</li>
+						 </ul>
+						 <div class="tab-content active">
+							 <p>
+								 To get started, we'll meet for a consultation to assess your needs. Once we have our initial direction, we'll review the audience and user base. Then it's research, research, research. We'll need to establish the content before we go any further. During this stage, I'll also set up all the technical stuff. Then it's on to creating a style guide and we finish off with our strategic direction review.
+							 </p>
+						 </div>
+						 <div class="tab-content">
+							 <p>
+								 Next, it's time to develop a concept to move forward on. With input from both parties, I'll design a low fidelity wireframe that encompasses basic layout, content structure, and visual flow. Then, we'll develop the visual style by encompassing elements from our style guide. Then, we'll fine tune our visual style for interaction. This includes buttons, links, and calls-to-action. I'll initiate some basic user testing as well to iron out any unsure elements.
+							 </p>
+						 </div>
+						 <div class="tab-content">
+							 <p>
+								 Actual development takes the longest as I use code to bring your project to life. I'll start out with the code boilerplate and framework to lay a foundation. If the design incorporates a CMS, it will be installed. If a base theme is being used or modified, it will be implemented. If the design will be completely custom, I'll use HTML, CSS, JS, and PHP to develop it. I'll constantly review and improve my work. I don't cut corners. More user testing will be completed at this stage as well.
+							 </p>
+						 </div>
+						 <div class="tab-content">
+							 <p>
+								 One development is complete, final testing will be initiated on the production-ready website. This will take place in a development environment. Together, we'll go through the final review and develop a release plan. Any training will be completed before launch. After much hard work, we can finally transfer all the files and rights and launch your website!
+							 </p>
+						 </div>
+						 <div class="tab-content">
+							 <p>
+								 It doesn't stop there. A website is never truly done. Upon launch, I'll ensure that all SEO requirements are met and any marketing strategies are implemented. I'll also track and handle any usability issues and bugs. Analytics will be set up, monitored, and aggregated so that any issues arising will be dealt with. I'll write a case study for the Success Evaluation so we can see just how effective the new website is.
+							 </p>
+						 </div>
+					</div><!-- / .pill tabs -->
+				</div>
+			</div><!-- / #process-overview -->
 
 		</section><!-- / #services -->
 
 		<!-- WORK -->
 		<section id="work" class="container">
 
-			<h3>What I've done</h3>
+			<div class="row">
+				<h3>What I've done</h3>
+			</div>
 
 			<!-- Project 1 (Threshold Marketing Group) -->
 			<div id="project-1" class="row">
@@ -443,7 +478,9 @@
 		<!-- ABOUT -->
 		<section id="about" class="container">
 
-			<h3>Who I am</h3>
+			<div class="row">
+				<h3>Who I am</h3>
+			</div>
 
 			<div class="row">
 				<div class="eleven columns centered">
@@ -498,17 +535,22 @@
 
 			<!-- Bio -->
 			<div id="bio" class="row">
-
+				<div class="four columns">
+					<p>
+						<span>When I was a kid,</span> I was always fascinated with all things technology and design. I was curious, so I tinkered with clocks and toasters. I wanted to know how things worked, and more importantly, how to make them work better. At the same time, I was a little adventurer. I was running around in the forest cataloguing plants and animals.
+					</p>
+					<p>
+						I built my first computer at age 13 and quickly delved into the inner workings. I learned C++ and did some not so nice things for the Dark Side. My first introduction to development for the web was with MySpace profile customization using HTML and bits of CSS. I liked it more than the traditional programming. So I ditched the bad habits learned from MySpace and really learnt HTML and CSS. I built my first websites for friends and it quickly became my full-time hobby.
+					</p>
+				</div>
+				<div class="four columns">
+					<p>
+						<span>Now, it's my profession.</span> I love the web. It is truly the best communication medium to reach global audiences. I want to make it a better and more beautiful place. I'd do it just for fun. I'm currently developing my freelance business and skills to establish myself in this industry. I'm constantly learning and seeking to network. Very soon, I plan on giving back by releasing several freebies and tutorials. I also plan on writing articles. I'm hopeful for my place in the industry. Passion drives me and inspiration sustains me.
+					</p>
+				</div>
 				<p class="four columns">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero sit voluptatem maxime iure iste hic placeat delectus laboriosam cumque tenetur minima necessitatibus vel voluptate eligendi debitis ipsa. Voluptas autem?
+					<span>So, what are my days off like?</span> Well, I can't stay inside for too long. I'm an accomplished hiker and backpacker. I've recently gotten serious about climbing and mountaineering.
 				</p>
-				<p class="four columns">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero sit voluptatem maxime iure iste hic placeat delectus laboriosam cumque tenetur minima necessitatibus vel voluptate eligendi debitis ipsa. Voluptas autem?
-				</p>
-				<p class="four columns">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero sit voluptatem maxime iure iste hic placeat delectus laboriosam cumque tenetur minima necessitatibus vel voluptate eligendi debitis ipsa. Voluptas autem?
-				</p>
-
 			</div><!-- / #bio -->
 
 			<!-- Personal Details -->
@@ -651,13 +693,15 @@
 		<!-- CONTACT -->
 		<section id="contact" class="container">
 
-			<h3>How to get in touch</h3>
+			<div class="row">
+				<h3>How to get in touch</h3>
+			</div>
 
 			<div class="row">
 
 				<!-- Contact Form -->
 				<div id="contact-form" class="seven columns">
-					<h4>Send a message</h4>
+					<h4>Send a message&#8230;</h4>
 					<form action="contact-form.php" method="post">
 						<ul>
 							<li class="field row">
@@ -682,9 +726,11 @@
 								<textarea id="message" class="textarea input ten columns" placeholder="Your message here..." rows="6"></textarea>
 							</li>
 							<li class="row">
-								<div class="push_two two columns">
-									<div class="medium metro rounded btn success">
-										<input type="submit" value="SEND">
+								<div class="push_two three columns">
+									<div class="medium metro rounded success btn">
+										<a href="#">
+											<input type="submit" value="SEND">
+										</a>
 									</div>
 								</div>
 							</li>
@@ -694,64 +740,91 @@
 
 				<!-- Contact Details -->
 				<div id="contact-details" class="five columns">
-					<h4>Get the details</h4>
+					<h4>Get the details&#8230;</h4>
 					<ul class="row">
 						<li class="row">
-							<h5 class="four columns">
-								<i class="icon-mail"></i>Email
+							<h5 class="five columns">
+								<i class="icon-mail"></i> General
 							</h5>
-							<p class="eight columns">
+							<span class="seven columns">
 								<a href="mailto:hello@pixelhippie.com">
 									hello@pixelhippie.com
 								</a>
-							</p>
+							</span>
 						</li>
 						<li class="row">
-							<h5 class="four columns">
-								<i class="icon-location"></i>Location
+							<h5 class="five columns">
+								<i class="icon-mail"></i> Support
 							</h5>
-							<p class="eight columns">
+							<span class="seven columns">
+								<a href="mailto:admin@pixelhippie.com">
+									admin@pixelhippie.com
+								</a>
+							</span>
+						</li>
+						<li class="row">
+							<h5 class="five columns">
+								<i class="icon-mail"></i> Payments
+							</h5>
+							<span class="seven columns">
+								<a href="mailto:payments@pixelhippie.com">
+									payments@pixelhippie.com
+								</a>
+							</span>
+						</li>
+						<li class="row">
+							<h5 class="five columns">
+								<i class="icon-twitter"></i> Twitter
+							</h5>
+							<span class="seven columns">
+								@PixelHippie
+							</span>
+						</li>
+						<li class="row">
+							<h5 class="five columns">
+								<i class="icon-phone"></i> Phone
+							</h5>
+							<span class="seven columns">
+								+1 (702) 518-5195
+							</span>
+						</li>
+						<li class="row">
+							<h5 class="five columns">
+								<i class="icon-location"></i> Location
+							</h5>
+							<span class="seven columns">
 								Las Vegas, NV
-							</p>
+							</span>
 						</li>
 						<li class="row">
-							<h5 class="four columns">
-								<i class="icon-clock"></i>Timezone
+							<h5 class="five columns">
+								<i class="icon-clock"></i> Timezone
 							</h5>
-							<p class="eight columns">
+							<span class="seven columns">
 								GMT -8:00 (PST)
-							</p>
+							</span>
 						</li>
 						<li class="row">
-							<h5 class="four columns">
-								<i class="icon-vcard"></i>vCard
+							<h5 class="five columns">
+								<i class="icon-vcard"></i> vCard
 							</h5>
-							<p class="eight columns">
-								<a href="">Download</a>
-							</p>
+							<div class="seven columns">
+								<div class="small btn oval default">
+									<a href="">Download</a>
+								</div>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="four columns">
-								<i class="icon-doc-text"></i>Resume
+							<h5 class="five columns">
+								<i class="icon-doc-text"></i> Resume
 							</h5>
-							<p class="eight columns">
-								<a href="">Download</a>
-							</p>
+							<div class="seven columns">
+								<div class="small btn oval default">
+									<a href="">Download</a>
+								</div>
+							</div>
 						</li>
 					</ul>
-
-					<h4>Login</h4>
-					<div class="row">
-						<div class="medium metro rounded wide btn default icon-left entypo icon-login">
-							<a href="http://client.pixelhippie.com/">PH&#124;Client Login</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="medium metro rounded wide btn default icon-left entypo icon-login">
-							<a href="http://hosting.pixelhippie.com/">PH &#124; Hosting Login</a>
-						</div>
-					</div>
-
 				</div><!-- / #contact-details -->
 
 			</div><!-- / .row -->
@@ -802,7 +875,7 @@
 							<a href="">jQuery</a>
 						</li>
 					</ul>
-					<p>v2.0 beta</p>
+					<p>v0.6 beta</p>
 					<p id="fin">fin</p>
 				</div>
 			</div>
