@@ -52,9 +52,7 @@
 		#branding, #work, #contact {background: #B1B429;}
 		#branding {padding: 0 0 300px 0;}
 		#work, #contact {padding: 300px 0;}
-		h3 {text-align: center; margin: 1em 0;}
-			h3:before, h3:after {content: " ----- "}
-			h3{font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;}
+		h3 {text-align: center; margin: 1em 0;font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;}
 		.li-divider li:after {content: "|";font-size: 1.2rem;}
 			.li-divider li:last-child:after {content: none;}
 		a {color: #66670D;}
@@ -65,12 +63,11 @@
 		/* Transitions */
 		a, .btn, #all-social li {-webkit-transition: 0.4s linear;-moz-transition: 0.4s linear;-o-transition: 0.4s linear;-ms-transition: 0.4s linear;transition: 0.4s linear;}
 
-		#main-logo {background: url(img/main-logo.png) center center no-repeat;background-size: 90%; text-indent: -9999em;height: 250px;margin: 2rem;}
+		#main-logo {background: url(img/main-logo.png) center center no-repeat;background-size: 90%; text-indent: -9999em;height: 250px;margin: 2rem 0;}
 
 		/* Navigation */
 		#nav {opacity: 0.8;-webkit-transition: 0.4s linear;-moz-transition: 0.4s linear;-o-transition: 0.4s linear;-ms-transition: 0.4s linear;transition: 0.4s linear;}
 			#nav:hover {opacity: 1;}
-		h1.logo>a>img {height: 60px;}
 		.navbar .logo a {padding-left: 0;}
 		h1.logo>a {opacity: 0.5;}
 			h1.logo>a:hover {opacity: 1;}
@@ -82,13 +79,13 @@
 			.navbar li .dropdown ul li a {background: #4B4D50;color: #fff;border-bottom: 1px solid #868d92;opacity: 1 !important;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
 				.navbar li .dropdown ul li a:hover {background: #868d92;}
 
-		#intro {margin-top: 366666666666666rem;}
+		#intro {margin-top: ;}
 		#intro p {font-size: 1.5rem;}
 		#dribbble-callout {height: 300px;width:100%;max-width: 140px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100%;}
 
 		.service-group {background: #B2B536;border-radius: 4px;padding: 8px 10px;}
 			.service-group h4 {color: #fff;background: #66670D;text-transform: uppercase;font-weight: bold;border-radius: 4px;margin-bottom: 1rem;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
-			.service-group li {font-weight: bold;color: #444;}
+			.service-group li {font-weight: bold;}
 		.tabs.pill .tab-nav {margin-bottom: 1rem;border-radius: 4px;}
 			.tabs .tab-nav > li > a {background: #66670D;color: #fff;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
 				.tabs .tab-nav > li.active > a {background: #7b7e15;color: #fff;}
@@ -107,9 +104,12 @@
 		#avatar div {border: 2px solid #4B4D50;}
 		#avatar img {width: 100%;}
 		#bio p {color: #444; text-align: justify;}
-		#bio span {font-weight: bold;}
+			#bio p:first-letter { float: left; color: #B2B536; font-size: 5rem; line-height: 4rem; padding-top: 4px; padding-right: 1rem; padding-left: 3px; font-family: Georgia; text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
 		#personal-details ul {background: #B2B536;border-radius: 4px;}
 			#personal-details i {color: #66670D;}
+			#personal-details span {color: #66670D;}
+		#interest-icons .image {margin-bottom: 0;}
+		#interest-icons h5.tooltip-title {color: #fff; border-bottom: 1px solid #ccc;}
 		#Facebook{background: #3B5998;}#Behance{background: #1769FF;}#GitHub {background: #4183C4;}#LinkedIn {background: #007FB1;}#Twitter {background: #00ACED;}#Forrst {background: #5B9A68;}#Spotify {background: #80B719;}#Stack-Overflow {background: #F47920;}#Google-Plus {background: #D14836;}#Dribbble {background: #EA4C89;}#DeviantART {background: #4B5D50;}#Codepen {background: #231F20;}
 			#all-social li {opacity: 0.5;}
 				#all-social li:hover {opacity: 1;}
@@ -117,8 +117,8 @@
 		#contact {background: #B1B429 url(img/map-placeholder.png) no-repeat center center;background-size: 120%;}
 		#contact-form {background: rgba(102,103,13,0.7);padding: 0 2.10526%;border-radius: 4px;}
 			#contact-form h4 {color: #fff;margin-bottom: 1rem;}
-			#contact-form input {width: 82.98246%;}
-			.picker{display: block;margin: 0;width: 82.98246%;}
+			#contact-form input {}
+			.picker{display: block;margin: 0;}
 				.picker select {width: 100%;}
 			textarea {width: auto;}
 
@@ -205,7 +205,7 @@
 						Hey, I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
 					</p>
 					<p>
-						I<i class="icon-heart"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
+						I<i class="icon-heart" style="color:#EB002D"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
 					</p>
 					<p>
 						<a href="#work" class="skip" gumby-offset="+150" gumby-goto="#work" gumby-duration="1000">see my work</a>
@@ -537,27 +537,32 @@
 			<div id="bio" class="row">
 				<div class="four columns">
 					<p>
-						<span>When I was a kid,</span> I was always fascinated with all things technology and design. I was curious, so I tinkered with clocks and toasters. I wanted to know how things worked, and more importantly, how to make them work better. At the same time, I was a little adventurer. I was running around in the forest cataloguing plants and animals.
-					</p>
-					<p>
-						I built my first computer at age 13 and quickly delved into the inner workings. I learned C++ and did some not so nice things for the Dark Side. My first introduction to development for the web was with MySpace profile customization using HTML and bits of CSS. I liked it more than the traditional programming. So I ditched the bad habits learned from MySpace and really learnt HTML and CSS. I built my first websites for friends and it quickly became my full-time hobby.
+						Throughout my life, this fantastic duality has persisted between technology and nature. As a kid, I was tinkering with electronics one day and running through the forest the next. I was so curious and wanted to understand how everything worked. I started to obsess with the design of things. I'd constantly sketch and brainstorm ideas for improvements. I sought harmony and simplicity, so I combined principles of nature with design elements. I then went on to build my first computer at age 13, quickly delving into the inner workings. I fell in love with the digital world.
 					</p>
 				</div>
 				<div class="four columns">
 					<p>
-						<span>Now, it's my profession.</span> I love the web. It is truly the best communication medium to reach global audiences. I want to make it a better and more beautiful place. I'd do it just for fun. I'm currently developing my freelance business and skills to establish myself in this industry. I'm constantly learning and seeking to network. Very soon, I plan on giving back by releasing several freebies and tutorials. I also plan on writing articles. I'm hopeful for my place in the industry. Passion drives me and inspiration sustains me.
+						I dabbled in programming early on, albeit with only slight interest. My first introduction to HTML was about 8 years ago customizing MySpace profiles for friends. The direct visual output quickly fueled my excitement. So I got serious, ditched the bad habits, and really learnt HTML and CSS. I built my first websites for friends and it quickly became a full-time passion. Now, I'm turning that into a profession. With that same child-like sense of wonder, I seek to understand and make the web a better, more beautiful place. I'm having an absolute blast along the way as I establish my venture.
 					</p>
 				</div>
-				<p class="four columns">
-					<span>So, what are my days off like?</span> Well, I can't stay inside for too long. I'm an accomplished hiker and backpacker. I've recently gotten serious about climbing and mountaineering.
-				</p>
+				<div class="four columns">
+					<p>
+						Of course, I'm not always working. On my days off, you'll find me outside. Either hiking, climbing, backpacking, kayaking, or running. I belong in the expanse of open land. I need to roam free. I'm an explorer and trailblazer - always attempting to go where few or none have gone before. Nature feeds my soul.
+					</p>
+				</div>
 			</div><!-- / #bio -->
 
 			<!-- Personal Details -->
 			<div id="personal-details" class="row">
 				<ul class="twelve columns">
 					<li class="two columns">
-						<i class="icon-calendar"></i>Age: 23
+						<i class="icon-calendar"></i>Age: <span>23</span>
+					</li>
+					<li class="two columns">
+						<i class="icon-user"></i>Height: <span>6&#8217; 6&#8221;</span>
+					</li>
+					<li class="two columns">
+						<i class="icon-user"></i>Hair: <span>Red</span>
 					</li>
 					<li class="two columns">
 						<i class="icon-monitor"></i>Mac Pro
@@ -566,55 +571,73 @@
 						<i class="icon-mobile"></i>iPhone 4
 					</li>
 					<li class="two columns">
-						<i class="icon-user"></i>Hair: Red
-					</li>
-					<li class="two columns">
-						<i class="icon-eye"></i>Eyes: Green
-					</li>
-					<li class="two columns">
-						<i class="icon-calendar"></i>Age: 23
+						<i class="icon-star"></i>Food: <span>Sushi</span>
 					</li>
 				</ul>
 			</div><!-- / #personal-details -->
 
 			<!-- Interests -->
 			<div id="interest-icons" class="row">
-				<ul class="twelve columns">
-					<li class="one column rounded image">
-						<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+				<ul class="eleven columns centered">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
-					<li class="one column rounded image">
-						<img src="img/img_silence_demo.jpg">
+					<li class="one column">
+						<div class="rounded image">
+							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						</div>
 					</li>
 				</ul>
 			</div><!-- / #interest-icons -->
@@ -705,16 +728,16 @@
 					<form action="contact-form.php" method="post">
 						<ul>
 							<li class="field row">
-								<label class="inline two columns" for="name">Name</label>
-								<input id="name" class="text input inline ten columns" type="text" placeholder="John Doe">
+								<label class="two columns" for="name">Name</label>
+								<input id="name" class="text input ten columns" type="text" placeholder="John Doe">
 							</li>
 							<li class="field row">
-								<label class="inline two columns" for="email">Email</label>
-								<input id="email" class="email input inline ten columns" type="email" placeholder="john.doe@example.com">
+								<label class="two columns" for="email">Email</label>
+								<input id="email" class="email input ten columns" type="email" placeholder="john.doe@example.com">
 							</li>
 							<li class="field row">
-								<label class="inline two columns" for="subject">Subject</label>
-								<div id="subject" class="picker">
+								<label class="two columns" for="subject">Subject</label>
+								<div id="subject" class="picker ten columns">
 									<select>
 										<option>I just want to say hi!</option>
 										<option>I'd like to inquire about hiring you.</option>
@@ -722,15 +745,13 @@
 								</div>
 							</li>
 							<li class="field row">
-								<label class="inline two columns" for="message">Message</label>
+								<label class="two columns" for="message">Message</label>
 								<textarea id="message" class="textarea input ten columns" placeholder="Your message here..." rows="6"></textarea>
 							</li>
 							<li class="row">
-								<div class="push_two three columns">
+								<div class="push_two two columns">
 									<div class="medium metro rounded success btn">
-										<a href="#">
-											<input type="submit" value="SEND">
-										</a>
+										<input type="submit" value="SEND">
 									</div>
 								</div>
 							</li>
