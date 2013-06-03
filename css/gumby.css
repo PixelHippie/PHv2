@@ -2126,6 +2126,7 @@ html {
 	border:none;
 	text-indent:100%;
 	background:url(../img/ui.totop.png) no-repeat left top;
+	z-index: 9999;
 }
 
 #toTopHover {
