@@ -111,7 +111,7 @@
 .skills {list-style: none outside none;}
 .skills li {background:#4B4D50;height: 23px;margin-bottom: 20px;width: 100%;}
 .skills li small {display: block;padding: 0 8px 8px 8px;font-size: 0.6rem; line-height: 1.2rem;text-transform: uppercase;}
-.skills li em { position:relative; top:-22px; color: #111;}
+.skills li label { position:relative; top:-22px; color: #111;}
 .skills span { color:#fff;}
 .expand {background:#B2B536;height: 20px;position: absolute;right: 0;}
 	#tool-skills .expand {background:#B2B536;height: 20px;position: absolute;left: 0;}

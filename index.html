@@ -34,17 +34,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/gumby.css">
+	<link rel="stylesheet" href="css/gumby.css"><!--
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsiveslides.css">
 	<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-	<link rel="stylesheet" type="text/css" href="css/ui.totop.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.totop.css" />-->
 	<style>
 		@import url(http://fonts.googleapis.com/css?family=Yellowtail);
 		body {background: #EEE; color: #FFF;}
 		.row {margin-bottom: 20px;padding-left: 24px;padding-right: 24px;}
 			.row .row {padding-left: 0;padding-right: 0;}
 			#nav .row {margin-bottom: 0;}
-		.centered {text-align: center;}
 			.justify {text-align: justify;}
 		.flt-rt {float: right;}
 		section {margin: 300px 0;}
@@ -80,37 +80,40 @@
 				.navbar li .dropdown ul li a:hover {background: #868d92;}
 
 		#intro {margin-top: ;}
-		#intro p {font-size: 1.5rem;}
-		#dribbble-callout {height: 300px;width:100%;max-width: 140px; background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100%;}
+		#intro p {font-size: 1.5rem;text-align: center;}
+		#dribbble-callout {height: 300px;width:100%;max-width: 140px;margin: 0 auto;background: url(img/dribbble-invite-callout.png) top center no-repeat; background-size: 100%;}
 
 		.service-group {background: #B2B536;border-radius: 4px;padding: 8px 10px;}
-			.service-group h4 {color: #fff;background: #66670D;text-transform: uppercase;font-weight: bold;border-radius: 4px;margin-bottom: 1rem;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
-			.service-group li {font-weight: bold;}
+			.service-group h4 {color: #fff;background: #66670D;text-transform: uppercase;font-weight: bold;border-radius: 4px;margin-bottom: 1rem;text-align: center;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
+			.service-group li {font-weight: bold;text-align: center;}
 		.tabs.pill .tab-nav {margin-bottom: 1rem;border-radius: 4px;}
 			.tabs .tab-nav > li > a {background: #66670D;color: #fff;text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
 				.tabs .tab-nav > li.active > a {background: #7b7e15;color: #fff;}
 				.tabs .tab-nav > li > a:hover {background: #7b7e15;color: #fff;}
 		.tabs .tab-content {background: #B2B536;height: auto;min-height: 9rem;border-radius: 4px;padding: 13px 20px;}
-			.tabs .tab-content p {margin-bottom: 0;}
+			.tabs .tab-content p {margin-bottom: 0;text-align: justify;}
 
 		#work .image {margin-bottom: 0;}
 		#project-1 {margin-bottom: 50px;}
 		.project-links {text-align: left; margin-top: 24px;}
-		.project-details {text-align: left;}
+		.project-details p {text-align: justify;}
 		.project-tags li {display: inline;}
 
+		#comingsoon-callout p {text-align: center; margin: 1em 0;font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;}
+
+		#skill-trees, #skill-trees .row {margin-bottom: 0;}
 		#code-skills {text-align: right;}
 		#tool-skills {text-align: left;}
-		#avatar div {border: 2px solid #4B4D50;}
+		#avatar div {border: 2px solid #4B4D50;max-width: 250px;margin: 1rem auto;}
 		#avatar img {width: 100%;}
 		#bio p {color: #444; text-align: justify;}
 			#bio p:first-letter { float: left; color: #B2B536; font-size: 5rem; line-height: 4rem; padding-top: 4px; padding-right: 1rem; padding-left: 3px; font-family: Georgia; text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;}
-		#personal-details ul {background: #B2B536;border-radius: 4px;}
+		#personal-details ul {background: #B2B536;border-radius: 4px; text-align: center;}
 			#personal-details i {color: #66670D;}
 			#personal-details span {color: #66670D;}
 		#interest-icons .image {margin-bottom: 0;}
 		#interest-icons li {cursor: help;}
-		.tooltipster-content h5 {color: #fff;font-weight: bold;border-bottom: 1px solid #ccc;}
+		#about h4 {text-align: center;}
 		#Facebook{background: #3B5998;}#Behance{background: #1769FF;}#GitHub {background: #4183C4;}#LinkedIn {background: #007FB1;}#Twitter {background: #00ACED;}#Forrst {background: #5B9A68;}#Spotify {background: #80B719;}#Stack-Overflow {background: #F47920;}#Google-Plus {background: #D14836;}#Dribbble {background: #EA4C89;}#DeviantART {background: #4B5D50;}#Codepen {background: #231F20;}
 			#all-social a {display: block;}
 			#all-social li {opacity: 0.5;}
@@ -119,7 +122,8 @@
 		#contact {background: #B1B429 url(img/map-placeholder.png) no-repeat center center;background-size: 120%;}
 		#contact-form {background: rgba(102,103,13,0.7);padding: 0 2.10526%;border-radius: 4px;}
 			#contact-form h4 {color: #fff;margin-bottom: 1rem;}
-			#contact-form input {}
+			#contact-form label {display: block;}
+			#contact-form input, #contact-form textarea {min-width: 100%;display: inline-block;}
 			.picker{display: block;margin: 0;}
 				.picker select {width: 100%;}
 			textarea {width: auto;}
@@ -128,7 +132,8 @@
 		#contact-details h4 {margin-bottom: 0.5rem;}
 		#contact-details li.row {margin-bottom: 0;}
 		#contact-details h5 {display: inline-block;}
-		#contact-details span {font-size: 1.125rem;padding: 0.273em 0;line-height: 1.15538em;}
+		#contact-details div {padding-left: 2.2rem;}
+		#contact-details .details-data {font-size: 1.125rem;padding-top: 0.273em;padding-bottom: 0.273em;line-height: 1.15538em;}
 		#contact-details .row .row {border-bottom: 1px solid #ccc;padding: 0.5rem 0;}
 			#contact-details .row .row:last-child {border-bottom: none;}
 
@@ -136,6 +141,7 @@
 			footer li {display: inline;}
 			footer a {color: #B2B536;}
 			#colophon {padding-top: 300px !important;padding-bottom: 300px !important;}
+				#colophon p, #colophon ul {text-align: center;}
 			#fin {margin-top: 100px;font-size: 2.2rem;}
 	</style>
 
@@ -203,8 +209,11 @@
 			<!-- Intro -->
 			<div id="intro" class="row">
 				<div class="ten columns centered">
+					<p style="font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;">
+						Hey!
+					</p>
 					<p>
-						Hey, I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
+						I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
 					</p>
 					<p>
 						I<i class="icon-heart" style="color:#EB002D"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
@@ -297,27 +306,27 @@
 						 <ul class="tab-nav">
 						 	<li class="active">
 						 		<a href="#">
-						 			Discover &plus; Plan
+						 			Discovery
 						 		</a>
 						 	</li>
 						 	<li>
 						 		<a href="#">
-						 			Conceptualize &plus; Visualize
+						 			Visual Design
 						 		</a>
 						 	</li>
 						 	<li>
 						 		<a href="#">
-						 			Develop &plus; Deploy
+						 			Development
 						 		</a>
 						 	</li>
 						 	<li>
 						 		<a href="#">
-						 			Test &plus; Launch
+						 			Launch
 						 		</a>
 						 	</li>
 						 	<li>
 						 		<a href="#">
-						 			Promote &plus; Measure
+						 			Promote
 						 		</a>
 						 	</li>
 						 </ul>
@@ -368,17 +377,12 @@
 						<ul class="rslides">
 							<li>
 								<div class="image rounded">
-									<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+									<img src="img/ThresholdMarketing_Home.png" alt="Threshold Marketing Home Page">
 								</div>
 							</li>
 							<li>
 								<div class="image rounded">
-									<img src="img/project_spotlight-desktop.jpg" alt="Design Spotlight - Desktop">
-								</div>
-							</li>
-							<li>
-								<div class="image rounded">
-									<img src="img/project_spotlight-mobile.jpg" alt="Design Spotlight - Mobile">
+									<img src="img/ThresholdMarketing_Services.png" alt="Threshold Marketing Services Page">
 								</div>
 							</li>
 						</ul>
@@ -389,7 +393,8 @@
 				<div class="six columns project-details">
 					<h4>Threshold Marketing Group</h4>
 					<!-- Description -->
-					<p class="justify">I helped Threshold Marketing establish an online presence by designing a brand image and developing a website around it. The layout is adaptable to all devices including handhelds & tablets. I incorporated a contact form and several snazzy CSS3 transitions.
+					<p>
+						I helped Threshold Marketing establish an online presence by designing a brand image and developing a website around it. We were working with a tight budget. I still managed to develop an adaptive layout that works on all major devices and substitute in CSS transitions for JavaScript. I developed a contact form for easy communication and collaborated to write the copy. A base HTML5 framework was established to easily build upon in the future.
 					</p>
 					<!-- Tags -->
 					<ul class="project-tags">
@@ -397,6 +402,8 @@
 						<li class="info label">CSS3</li>
 						<li class="info label">PHP</li>
 						<li class="info label">Logo</li>
+						<li class="info label">Copy</li>
+						<li class="info label">Adaptive</li>
 					</ul>
 					<!-- Links -->
 					<div class="row project-links">
@@ -426,17 +433,17 @@
 						<ul class="rslides">
 							<li>
 								<div class="image rounded">
-									<img src="img/project_responsive-overview.jpg" alt="Responsive Design Overview - All Devices">
+									<img src="img/MountainBikeMaps_Home.png" alt="Mountain Bike Maps Home Page">
 								</div>
 							</li>
 							<li>
 								<div class="image rounded">
-									<img src="img/project_spotlight-desktop.jpg" alt="Design Spotlight - Desktop">
+									<img src="img/MountainBikeMaps_State.png" alt="Mountain Bike Maps State Page">
 								</div>
 							</li>
 							<li>
 								<div class="image rounded">
-									<img src="img/project_spotlight-mobile.jpg" alt="Design Spotlight - Mobile">
+									<img src="img/MountainBikeMaps_Network.png" alt="Mountain Bike Maps Network Page">
 								</div>
 							</li>
 						</ul>
@@ -447,14 +454,17 @@
 				<div class="six columns project-details">
 					<h4>Mountain Bike Maps</h4>
 					<!-- Description -->
-					<p>For this project, I collaborated with graphic designer, John Williams of jFiveDesign, to bring his personal project to life. John had the brand image, graphic elements, and color palette down on his initial release, but he lacked the code structure and modern practices. I helped bring the site up-to-date with a new layout and all-new code framework that John could build upon. I helped implement a JavaScript map for the home page and advised him on best practices, semantics, and accessibility.
+					<p>
+						For this project, I collaborated with graphic designer John Williams, of <a href="http://www.jfivedesigns.com/">jFiveDesigns</a>, to bring his personal project to life. John had the brand image, graphic elements, and colors down on his initial site, but he lacked code structure and was a bit behind on modern practices. I helped update the site with a new layout and all-new code framework that John could build upon. I helped refine the style details and advised him on best practices, semantics, and accessibility.
 					</p>
 					<!-- Tags -->
 					<ul class="project-tags">
 						<li class="info label">HTML5</li>
 						<li class="info label">CSS3</li>
-						<li class="info label">jQuery</li>
+						<li class="info label">JavaScript</li>
 						<li class="info label">Consultation</li>
+						<li class="info label">Twitter API</li>
+						<li class="info label">Facebook API</li>
 					</ul>
 					<!-- Links -->
 					<div class="row project-links">
@@ -475,6 +485,14 @@
 
 			</div><!-- / #project-2 -->
 
+			<div class="row">
+				<div id="comingsoon-callout" class="six columns centered">
+					<p>
+						More examples coming soon&#8230;
+					</p>
+				</div>
+			</div>
+
 		</section><!-- / #work -->
 
 		<!-- ABOUT -->
@@ -484,7 +502,7 @@
 				<h3>Who I am</h3>
 			</div>
 
-			<div class="row">
+			<div id="skill-trees" class="row">
 				<div class="eleven columns centered">
 					<div class="row">
 
@@ -492,16 +510,16 @@
 						<div id="code-skills" class="five columns">
 							<ul class="skills">
 								<li>
-									<span class="expand html5"><small>Jedi Master</small></span><em>HTML5</em>
+									<span class="expand html5"><small>Jedi Master</small></span><label>HTML5</label>
 								</li>
 								<li>
-									<span class="expand css3"><small>Jedi Master</small></span><em>CSS3</em>
+									<span class="expand css3"><small>Jedi Master</small></span><label>CSS3</label>
 								</li>
 								<li>
-									<span class="expand jquery"><small>Jedi Knight</small></span><em>JS &plus; jQuery</em>
+									<span class="expand jquery"><small>Jedi Knight</small></span><label>JS &plus; jQuery</label>
 								</li>
 								<li>
-									<span class="expand php"><small>Padawan</small></span><em>PHP &plus; MySQL</em>
+									<span class="expand php"><small>Padawan</small></span><label>PHP &plus; MySQL</label>
 								</li>
 							</ul>
 						</div><!-- / #code-skills -->
@@ -517,16 +535,16 @@
 						<div id="tool-skills" class="five columns">
 							<ul class="skills">
 								<li>
-									<span class="expand photoshop"><small>Youngling</small></span><em>Photoshop</em>
+									<span class="expand photoshop"><small>Youngling</small></span><label>Photoshop</label>
 								</li>
 								<li>
-									<span class="expand illustrator"><small>Padawan</small></span><em>Illustrator</em>
+									<span class="expand illustrator"><small>Padawan</small></span><label>Illustrator</label>
 								</li>
 								<li>
-									<span class="expand wordpress"><small>Jedi Knight</small></span><em>WordPress</em>
+									<span class="expand wordpress"><small>Jedi Knight</small></span><label>WordPress</label>
 								</li>
 								<li>
-									<span class="expand gumby"><small>Jedi Knight</small></span><em>Gumby 2</em>
+									<span class="expand gumby"><small>Jedi Knight</small></span><label>Gumby 2</label>
 								</li>
 							</ul>
 						</div><!-- / #tool-skills -->
@@ -549,7 +567,7 @@
 				</div>
 				<div class="four columns">
 					<p>
-						Of course, I'm not always working. On my days off, you'll find me outside. Either hiking, climbing, backpacking, kayaking, or running. I belong in the expanse of open land. I need to roam free. I'm an explorer and trailblazer - always attempting to go where few or none have gone before. Nature feeds my soul.
+						Since freelancing allows me to set my own schedule, I make sure my days are well balanced. I'm still that same kid running through the forest so my days off are pretty fun. These days, I'm generally either hiking or climbing in the surrounding areas. I'll also take several backpacking trips in a year, usually at a week each with one long-distance trip. In the winter, things really pick up as I take up snowboarding and mountaineering. Rainy days usually send me to the garage to work on restoring my 1970 Honda CB350. Keep scrolling to check out the other aspects of my life.
 					</p>
 				</div>
 			</div><!-- / #bio -->
@@ -558,13 +576,13 @@
 			<div id="personal-details" class="row">
 				<ul class="twelve columns">
 					<li class="two columns">
-						<i class="icon-calendar"></i><span>23</span> Years Old
+						<i class="icon-calendar"></i>23 Years Old
 					</li>
 					<li class="two columns">
-						<i class="icon-user"></i><span>6&#8217; 6&#8221;</span> Tall
+						<i class="icon-user"></i>6&#8217; 6&#8221; Tall
 					</li>
 					<li class="two columns">
-						<i class="icon-user"></i><span>Red</span> Hair
+						<i class="icon-user"></i>Red Hair
 					</li>
 					<li class="two columns">
 						<i class="icon-monitor"></i>Mac Pro
@@ -573,12 +591,12 @@
 						<i class="icon-mobile"></i>iPhone 4
 					</li>
 					<li class="two columns">
-						<i class="icon-star"></i>Food: <span>Sushi</span>
+						<i class="icon-star"></i>Food: Sushi
 					</li>
 				</ul>
 			</div><!-- / #personal-details -->
 
-			<!-- Interests -->
+			<!-- Interests (NIP)
 			<div id="interest-icons" class="row">
 				<div class="eleven columns centered">
 					<div class="row">
@@ -591,6 +609,25 @@
 								</li>
 								<li>
 									<div class="rounded image">
+										<img class="tooltip" title="<h5>Climbing</h5>Never before have I felt such a connection with the earth. Climbing is an almost spiritual experience for me. It also happens to be an amazing workout." src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="three columns">
+							<ul class="three_up tiles">
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>lorem rgg" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
 										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
 									</div>
 								</li>
@@ -639,27 +676,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and et out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div><!-- / .row -->
-				</div><!-- / .eleven -->
+					</div><!-- / .row --
+				</div><!-- / .eleven --
 			</div><!-- / #interest-icons -->
 
 			<!-- All Social -->
@@ -769,36 +787,34 @@
 			<div class="row">
 
 				<!-- Contact Form -->
-				<div id="contact-form" class="seven columns">
+				<div id="contact-form" class="six columns">
 					<h4>Send a message&#8230;</h4>
 					<form action="contact-form.php" method="post">
 						<ul>
-							<li class="field row">
-								<label class="two columns" for="name">Name</label>
-								<input id="name" class="text input ten columns" type="text" placeholder="John Doe">
+							<li class="field">
+								<label class="" for="name">Name</label>
+								<input id="name" class="text input" type="text" placeholder="John Doe">
 							</li>
-							<li class="field row">
-								<label class="two columns" for="email">Email</label>
-								<input id="email" class="email input ten columns" type="email" placeholder="john.doe@example.com">
+							<li class="field">
+								<label class="" for="email">Email</label>
+								<input id="email" class="email input" type="email" placeholder="john.doe@example.com">
 							</li>
-							<li class="field row">
-								<label class="two columns" for="subject">Subject</label>
-								<div id="subject" class="picker ten columns">
+							<li class="field">
+								<label class="" for="subject">Subject</label>
+								<div id="subject" class="picker">
 									<select>
 										<option>I just want to say hi!</option>
 										<option>I'd like to inquire about hiring you.</option>
 									</select>
 								</div>
 							</li>
-							<li class="field row">
-								<label class="two columns" for="message">Message</label>
-								<textarea id="message" class="textarea input ten columns" placeholder="Your message here..." rows="6"></textarea>
+							<li class="field">
+								<label class="" for="message">Message</label>
+								<textarea id="message" class="textarea input" placeholder="Your message here..." rows="4"></textarea>
 							</li>
-							<li class="row">
-								<div class="push_two two columns">
-									<div class="medium metro rounded success btn">
-										<input type="submit" value="SEND">
-									</div>
+							<li class="field">
+								<div class="medium metro rounded success btn">
+									<input type="submit" value="SEND">
 								</div>
 							</li>
 						</ul>
@@ -806,86 +822,86 @@
 				</div>
 
 				<!-- Contact Details -->
-				<div id="contact-details" class="five columns">
+				<div id="contact-details" class="six columns">
 					<h4>Get the details&#8230;</h4>
 					<ul class="row">
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-mail"></i> General
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								<a href="mailto:hello@pixelhippie.com">
 									hello@pixelhippie.com
 								</a>
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-mail"></i> Support
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								<a href="mailto:admin@pixelhippie.com">
 									admin@pixelhippie.com
 								</a>
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-mail"></i> Payments
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								<a href="mailto:payments@pixelhippie.com">
 									payments@pixelhippie.com
 								</a>
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-twitter"></i> Twitter
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								@PixelHippie
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-phone"></i> Phone
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								+1 (702) 518-5195
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-location"></i> Location
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								Las Vegas, NV
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-clock"></i> Timezone
 							</h5>
-							<span class="seven columns">
+							<div class="eight columns details-data">
 								GMT -8:00 (PST)
-							</span>
+							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-vcard"></i> vCard
 							</h5>
-							<div class="seven columns">
+							<div class="eight columns">
 								<div class="small btn oval default">
 									<a href="">Download</a>
 								</div>
 							</div>
 						</li>
 						<li class="row">
-							<h5 class="five columns">
+							<h5 class="four columns">
 								<i class="icon-doc-text"></i> Resume
 							</h5>
-							<div class="seven columns">
+							<div class="eight columns">
 								<div class="small btn oval default">
 									<a href="">Download</a>
 								</div>
