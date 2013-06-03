@@ -109,8 +109,10 @@
 			#personal-details i {color: #66670D;}
 			#personal-details span {color: #66670D;}
 		#interest-icons .image {margin-bottom: 0;}
-		#interest-icons h5.tooltip-title {color: #fff; border-bottom: 1px solid #ccc;}
+		#interest-icons li {cursor: help;}
+		.tooltipster-content h5 {color: #fff;font-weight: bold;border-bottom: 1px solid #ccc;}
 		#Facebook{background: #3B5998;}#Behance{background: #1769FF;}#GitHub {background: #4183C4;}#LinkedIn {background: #007FB1;}#Twitter {background: #00ACED;}#Forrst {background: #5B9A68;}#Spotify {background: #80B719;}#Stack-Overflow {background: #F47920;}#Google-Plus {background: #D14836;}#Dribbble {background: #EA4C89;}#DeviantART {background: #4B5D50;}#Codepen {background: #231F20;}
+			#all-social a {display: block;}
 			#all-social li {opacity: 0.5;}
 				#all-social li:hover {opacity: 1;}
 
@@ -490,16 +492,16 @@
 						<div id="code-skills" class="five columns">
 							<ul class="skills">
 								<li>
-									<span class="expand html5"></span><em>HTML5</em>
+									<span class="expand html5"><small>Jedi Master</small></span><em>HTML5</em>
 								</li>
 								<li>
-									<span class="expand css3"></span><em>CSS3</em>
+									<span class="expand css3"><small>Jedi Master</small></span><em>CSS3</em>
 								</li>
 								<li>
-									<span class="expand jquery"></span><em>JS &plus; jQuery</em>
+									<span class="expand jquery"><small>Jedi Knight</small></span><em>JS &plus; jQuery</em>
 								</li>
 								<li>
-									<span class="expand php"></span><em>PHP &plus; MySQL</em>
+									<span class="expand php"><small>Padawan</small></span><em>PHP &plus; MySQL</em>
 								</li>
 							</ul>
 						</div><!-- / #code-skills -->
@@ -515,16 +517,16 @@
 						<div id="tool-skills" class="five columns">
 							<ul class="skills">
 								<li>
-									<span class="expand photoshop"></span><em>Photoshop</em>
+									<span class="expand photoshop"><small>Youngling</small></span><em>Photoshop</em>
 								</li>
 								<li>
-									<span class="expand illustrator"></span><em>Illustrator</em>
+									<span class="expand illustrator"><small>Padawan</small></span><em>Illustrator</em>
 								</li>
 								<li>
-									<span class="expand wordpress"></span><em>WordPress</em>
+									<span class="expand wordpress"><small>Jedi Knight</small></span><em>WordPress</em>
 								</li>
 								<li>
-									<span class="expand gumby"></span><em>Gumby 2</em>
+									<span class="expand gumby"><small>Jedi Knight</small></span><em>Gumby 2</em>
 								</li>
 							</ul>
 						</div><!-- / #tool-skills -->
@@ -556,13 +558,13 @@
 			<div id="personal-details" class="row">
 				<ul class="twelve columns">
 					<li class="two columns">
-						<i class="icon-calendar"></i>Age: <span>23</span>
+						<i class="icon-calendar"></i><span>23</span> Years Old
 					</li>
 					<li class="two columns">
-						<i class="icon-user"></i>Height: <span>6&#8217; 6&#8221;</span>
+						<i class="icon-user"></i><span>6&#8217; 6&#8221;</span> Tall
 					</li>
 					<li class="two columns">
-						<i class="icon-user"></i>Hair: <span>Red</span>
+						<i class="icon-user"></i><span>Red</span> Hair
 					</li>
 					<li class="two columns">
 						<i class="icon-monitor"></i>Mac Pro
@@ -578,68 +580,86 @@
 
 			<!-- Interests -->
 			<div id="interest-icons" class="row">
-				<ul class="eleven columns centered">
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+				<div class="eleven columns centered">
+					<div class="row">
+						<div class="three columns">
+							<ul class="three_up tiles">
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and get out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+							</ul>
 						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						<div class="three columns">
+							<ul class="three_up tiles">
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and et out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+							</ul>
 						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						<div class="three columns">
+							<ul class="three_up tiles">
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and et out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+							</ul>
 						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
+						<div class="three columns">
+							<ul class="three_up tiles">
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and et out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="rounded image">
+										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
+									</div>
+								</li>
+							</ul>
 						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-					<li class="one column">
-						<div class="rounded image">
-							<img class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sapiente at reprehenderit reiciendis praesentium." src="img/img_silence_demo.jpg">
-						</div>
-					</li>
-				</ul>
+					</div><!-- / .row -->
+				</div><!-- / .eleven -->
 			</div><!-- / #interest-icons -->
 
 			<!-- All Social -->
@@ -647,68 +667,94 @@
 				<h4 class="three columns centered">Follow Me!</h4>
 			</div>
 			<div id="all-social" class="row">
-				<ul class="ten columns centered">
-					<li id="Facebook" class="one column rounded image">
-						<a href="http://www.facebook.com/PixelHippie" title="Facebook">
-							<img src="img/facebook.png" alt="Facebook">
-						</a>
-					</li>
-					<li id="Behance" class="one column rounded image">
-						<a href="http://www.behance.net/PixelHippie" title="Behance">
-							<img src="img/behance.png" alt="Behance">
-						</a>
-					</li>
-					<li id="GitHub" class="one column rounded image">
-						<a href="https://github.com/PixelHippie" title="GitHub">
-							<img src="img/github.png" alt="GitHub">
-						</a>
-					</li>
-					<li id="LinkedIn" class="one column rounded image">
-						<a href="www.linkedin.com/pub/austin-cooper/66/7ab/b34" title="LinkedIn">
-							<img src="img/linkedin.png" alt="LinkedIn">
-						</a>
-					</li>
-					<li id="Twitter" class="one column rounded image">
-						<a href="https://twitter.com/PixelHippie" title="Twitter">
-							<img src="img/twitter.png" alt="Twitter">
-						</a>
-					</li>
-					<li id="Forrst" class="one column rounded image">
-						<a href="http://forrst.com/people/PixelHippie" title="Forrst">
-							<img src="img/forrst.png" alt="Forrst">
-						</a>
-					</li>
-					<li id="Spotify" class="one column rounded image">
-						<a href="https://play.spotify.com/user/pixelhippie" title="Spotify">
-							<img src="img/spotify.png" alt="Spotify">
-						</a>
-					</li>
-					<li id="Stack-Overflow" class="one column rounded image">
-						<a href="http://stackoverflow.com/users/2424216/pixelhippie" title="Stack Overflow">
-							<img src="img/stackoverflow.png" alt="Stack Overflow">
-						</a>
-					</li>
-					<li id="Google-Plus" class="one column rounded image">
-						<a href="https://plus.google.com/112033696338122754283/" title="Google+">
-							<img src="img/googleplus.png" alt="Google+">
-						</a>
-					</li>
-					<li id="Dribbble" class="one column rounded image">
-						<a href="http://dribbble.com/PixelHippie" title="Dribbble">
-							<img src="img/dribbble.png" alt="Dribbble">
-						</a>
-					</li>
-					<li id="DeviantART" class="one column rounded image">
-						<a href="http://pixelhippie.deviantart.com/" title="DeviantART">
-							<img src="img/deviantart.png" alt="DeviantART">
-						</a>
-					</li>
-					<li id="Codepen" class="one column rounded image">
-						<a href="http://codepen.io/PixelHippie" title="Codepen">
-							<img src="img/codepen.png" alt="Codepen">
-						</a>
-					</li>
-				</ul>
+				<div class="ten columns centered">
+					<div class="row">
+						<div class="two columns">
+							<ul class="two_up tiles">
+								<li id="Facebook" class="rounded image">
+									<a href="http://www.facebook.com/PixelHippie" title="Facebook">
+										<img src="img/facebook.png" alt="Facebook">
+									</a>
+								</li>
+								<li id="Behance" class="rounded image">
+									<a href="http://www.behance.net/PixelHippie" title="Behance">
+										<img src="img/behance.png" alt="Behance">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="two columns">
+							<ul class="two_up tiles">
+								<li id="GitHub" class="rounded image">
+									<a href="https://github.com/PixelHippie" title="GitHub">
+										<img src="img/github.png" alt="GitHub">
+									</a>
+								</li>
+								<li id="LinkedIn" class="rounded image">
+									<a href="www.linkedin.com/pub/austin-cooper/66/7ab/b34" title="LinkedIn">
+										<img src="img/linkedin.png" alt="LinkedIn">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="two columns">
+							<ul class="two_up tiles">
+								<li id="Twitter" class="rounded image">
+									<a href="https://twitter.com/PixelHippie" title="Twitter">
+										<img src="img/twitter.png" alt="Twitter">
+									</a>
+								</li>
+								<li id="Forrst" class="rounded image">
+									<a href="http://forrst.com/people/PixelHippie" title="Forrst">
+										<img src="img/forrst.png" alt="Forrst">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="two columns">
+							<ul class="two_up tiles">
+								<li id="Spotify" class="rounded image">
+									<a href="https://play.spotify.com/user/pixelhippie" title="Spotify">
+										<img src="img/spotify.png" alt="Spotify">
+									</a>
+								</li>
+								<li id="Stack-Overflow" class="rounded image">
+									<a href="http://stackoverflow.com/users/2424216/pixelhippie" title="Stack Overflow">
+										<img src="img/stackoverflow.png" alt="Stack Overflow">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="two columns">
+							<ul class="two_up tiles">
+								<li id="Google-Plus" class="rounded image">
+									<a href="https://plus.google.com/112033696338122754283/" title="Google+">
+										<img src="img/googleplus.png" alt="Google+">
+									</a>
+								</li>
+								<li id="Dribbble" class="rounded image">
+									<a href="http://dribbble.com/PixelHippie" title="Dribbble">
+										<img src="img/dribbble.png" alt="Dribbble">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="two columns">
+							<ul class="two_up tiles">
+								<li id="DeviantART" class="rounded image">
+									<a href="http://pixelhippie.deviantart.com/" title="DeviantART">
+										<img src="img/deviantart.png" alt="DeviantART">
+									</a>
+								</li>
+								<li id="Codepen" class="rounded image">
+									<a href="http://codepen.io/PixelHippie" title="Codepen">
+										<img src="img/codepen.png" alt="Codepen">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div><!-- / #all-social -->
 
 		</section><!-- / #about -->
