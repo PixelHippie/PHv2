@@ -78,8 +78,7 @@ p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 a { color: #d04526; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #c03d20; }
 
-/*=====================================================
- 	Lists 	 ======================================================*/
+/*=====================================================   Lists   ======================================================*/
 ul, ol { margin-bottom: 0.273em; }
 
 ul { list-style: none outside; }
@@ -309,7 +308,8 @@ img { -ms-interpolation-mode: bicubic; }
 .valign ​ > article { display: table-cell; vertical-align: middle; }
 
 /* Mobile */
-@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
+@media only screen and (max-width: 767px) {
+	body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
   .container { min-width: 0; margin-left: 0; margin-right: 0; }
   .row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
   .row .row .column, .row .row .columns { padding: 0; }
@@ -1564,7 +1564,7 @@ form fieldset legend { padding: 5px 10px; }
 .btn.xlarge.icon-left a:before, .skiplink.xlarge.icon-left a:before { left: 20px; }
 .btn.xlarge.icon-right a, .skiplink.xlarge.icon-right a { padding-right: 66px; }
 .btn.xlarge.icon-right a:after, .skiplink.xlarge.icon-right a:after { right: 20px; }
-.btn.large, .skiplink.large { font-size: 26px; font-size: 1.625rem; height: 58px; line-height: 56px; }
+.btn.large, .skiplink.large { font-size: 26px; font-size: 1.625rem; height: auto; min-height: 58px; line-height: 56px; }
 .btn.large a, .skiplink.large a { position: relative; padding: 0 26px; }
 .btn.large.icon-left a, .skiplink.large.icon-left a { padding-left: 58px; }
 .btn.large.icon-left a:before, .skiplink.large.icon-left a:before { left: 17.33333px; }
@@ -1590,9 +1590,9 @@ form fieldset legend { padding: 5px 10px; }
 .btn.primary, .skiplink.primary { background: #3085d6; border: 1px solid #3085d6; }
 .btn.primary:hover, .skiplink.primary:hover { background: #5b9ede; }
 .btn.primary:active, .skiplink.primary:active { background: #236bb0; }
-.btn.secondary, .skiplink.secondary { background: #42a35a; border: 1px solid #42a35a; }
-.btn.secondary:hover, .skiplink.secondary:hover { background: #5bbd73; }
-.btn.secondary:active, .skiplink.secondary:active { background: #337f46; }
+.btn.secondary, .skiplink.secondary { background: #66670D; border: 1px solid #66670D; }
+.btn.secondary:hover, .skiplink.secondary:hover { background: #7c7e10; }
+.btn.secondary:active, .skiplink.secondary:active { background: #5a5b0c; }
 .btn.default, .skiplink.default { background: #f2f2f2; border: 1px solid #f2f2f2; color: #555555; border: 1px solid #f2f2f2; }
 .btn.default:hover, .skiplink.default:hover { background: white; }
 .btn.default:active, .skiplink.default:active { background: #d8d8d8; }
@@ -2324,15 +2324,15 @@ body {
 
 /* Sections */
 
-section {margin: 300px 0;}
+section {margin: 100px 0;}
 
 #contact {margin-bottom: 0;}
 
 #branding, #work, #contact {background: #B1B429;}
 
-#branding {padding: 0 0 300px 0;}
+#branding {padding: 0 0 100px 0;}
 
-#work, #contact {padding: 300px 0;}
+#work, #contact {padding: 100px 0;}
 
 /* Default Styles */
 
@@ -2431,18 +2431,29 @@ h1.logo>a {opacity: 0.5;}
 
 	#intro p {font-size: 1.5rem;text-align: center;}
 
+#primary-action {
+	text-align: center;
+	margin: 58px 0;
+}
+
+	#primary-action div:first-child {text-align: right;}
+
+	#primary-action div:last-child {text-align: left;}
+
+	#primary-action p {padding-top: 0.5rem;}
+
 /* Main Social */
 #main-social {text-align: center;}
 
 #main-social .btn {margin-bottom: 0.5rem;}
 
 #dribbble-callout {
-	height: 300px;
+	height: 250px;
 	width:100%;
 	max-width: 140px;
 	margin: 0 auto;
 	background: url(../img/dribbble-invite-callout.png) top center no-repeat;
-	background-size: 100%;
+	background-size: 80%;
 }
 
 /* SERVICES */
@@ -2453,22 +2464,20 @@ h1.logo>a {opacity: 0.5;}
 	background: #B2B536;
 	border-radius: 4px;
 	padding: 8px 10px;
-	margin-bottom: 1rem;
+	margin: 0 auto 1rem;
 }
 
 	.service-group h4 {
 		color: #fff;
-		background: #66670D;
 		text-transform: uppercase;
 		font-weight: bold;
-		border-radius: 4px;
 		margin-bottom: 1rem;
 		text-align: center;
+		border-bottom: 2px solid #eee;
 		text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;
 	}
 
 	.service-group li {
-		font-weight: bold;
 		text-align: center;
 	}
 
@@ -2485,12 +2494,12 @@ h1.logo>a {opacity: 0.5;}
 	}
 
 		.tabs .tab-nav > li.active > a {
-			background: #7b7e15;
+			background: #939413;
 			color: #fff;
 		}
 
 		.tabs .tab-nav > li > a:hover {
-			background: #7b7e15;
+			background: #939413;
 			color: #fff;
 		}
 
@@ -2511,20 +2520,21 @@ h1.logo>a {opacity: 0.5;}
 
 #work .image {margin-bottom: 0;}
 
-#project-1 {margin-bottom: 50px;}
+.project-group {margin-bottom: 50px;}
+
+.project-details p {text-align: justify;}
+
+.project-tags li {display: inline;}
 
 .project-links {
 	text-align: left;
 	margin-top: 24px;
 }
 
-.project-details p {text-align: justify;}
-
-.project-tags li {display: inline;}
+	.project-links .btn {margin-bottom: 1rem;}
 
 #comingsoon-callout p {
 	text-align: center;
-	margin: 1em 0;
 	font-family: 'Yellowtail', cursive;
 	font-size: 2.2rem;
 	font-weight: 600;
@@ -2574,12 +2584,15 @@ h1.logo>a {opacity: 0.5;}
 #personal-details ul {
 	background: #B2B536;
 	border-radius: 4px;
-	text-align: center;
+	text-align: left;
 }
 
-	#personal-details i {color: #66670D;}
+#personal-details .tiles.two_up {margin-left: 0;}
 
-	#personal-details span {color: #66670D;}
+	#personal-details i[class^="icon-"], i[class*=" icon-"] {
+		margin: 0;
+		color: #66670D;
+	}
 
 /* Interest Icons */
 
@@ -2679,8 +2692,8 @@ footer {
 	footer a {color: #B2B536;}
 
 	#colophon {
-		padding-top: 300px !important;
-		padding-bottom: 300px !important;
+		padding-top: 100px !important;
+		padding-bottom: 100px !important;
 	}
 
 		#colophon p, #colophon ul {text-align: center;}
@@ -2689,3 +2702,24 @@ footer {
 		margin-top: 100px;
 		font-size: 2.2rem;
 	}
+
+
+/**************************************
+	Custom Mobile
+**************************************/
+
+@media only screen and (max-width: 767px) {
+	section {margin: 50px 0;}
+		#branding {padding: 0 0 50px 0;}
+		#work, #contact {padding: 50px 0;}
+	#nav ul.columns {min-height: 0 !important;}
+	h3 {margin: 0 0 1rem 0;}
+	#main-logo {margin: 0;height: 180px;}
+	#primary-action div:first-child, #primary-action div:last-child {text-align: center;}
+	#dribbble-callout {display: none;}
+	.service-group {max-width: 250px;}
+	#personal-details ul {text-align: left;}
+	#contact {background-image: none;}
+	#contact-form {padding: 0 1rem 0.5rem 1rem;margin-bottom: 1rem;}
+		#contact-form form {margin-bottom: 0;}
+}

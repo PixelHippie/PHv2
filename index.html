@@ -60,16 +60,16 @@
 					</h1>
 					<ul class="nine columns">
 						<li>
-							<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">Services</a>
+							<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-150" gumby-duration="1000">Services</a>
 						</li>
 						<li>
-							<a href="#work" class="skip" gumby-goto="#work" gumby-offset="+150" gumby-duration="1000">Work</a>
+							<a href="#work" class="skip" gumby-goto="#work" gumby-duration="1000">Work</a>
 						</li>
 						<li>
 							<a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">About</a>
 						</li>
 						<li>
-							<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">Contact</a>
+							<a href="#contact" class="skip" gumby-goto="#contact" gumby-duration="1000">Contact</a>
 						</li>
 						<li>
 							<a id="login" href="#"><i class="icon-login"></i> Login</a>
@@ -107,13 +107,26 @@
 						I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
 					</p>
 					<p>
-						I<i class="icon-heart" style="color:#EB002D"></i><a href="#services" class="skip" gumby-goto="#services" gumby-offset="-250" gumby-duration="1000">crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
+						<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-150" gumby-duration="1000">I<i class="icon-heart" style="color:#EB002D"></i>crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
 					</p>
-					<p>
-						<a href="#work" class="skip" gumby-offset="+150" gumby-goto="#work" gumby-duration="1000">see my work</a>
-						-or-
-						<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="+150" gumby-duration="1000">drop me a line</a>
-					</p>
+
+					<!-- Primary Action -->
+					<div id="primary-action" class="row">
+						<div class="five columns">
+							<div class="large metro rounded btn secondary">
+								<a href="#work" class="skip" gumby-goto="#work" gumby-duration="1000">View my portfolio</a>
+							</div>
+						</div>
+						<div class="two columns">
+							<p>&#8212; or &#8212;</p>
+						</div>
+						<div class="five columns">
+							<div class="large metro rounded btn secondary">
+								<a href="#contact" class="skip" gumby-goto="#contact" gumby-duration="1000">Hire me for work</a>
+							</div>
+						</div>
+					</div><!-- / #primary-action -->
+
 				</div>
 			</div><!-- / #intro -->
 
@@ -148,7 +161,9 @@
 		<section id="services" class="container">
 
 			<!-- Services Overview -->
-			<h3>What I do</h3>
+			<div class="row">
+				<h3>What I do</h3>
+			</div>
 			<div id="services-overview" class="row">
 				<div class="eight columns centered">
 					<div class="four columns">
@@ -260,7 +275,7 @@
 			</div>
 
 			<!-- Project 1 (Threshold Marketing Group) -->
-			<div id="project-1" class="row">
+			<div id="project-1" class="row project-group">
 
 				<!-- Project 1 Showcase -->
 				<div class="six columns project-showcase">
@@ -303,20 +318,18 @@
 								<a href="http://www.lvthreshold.com/">Website Link</a>
 							</div>
 						</div>
-						<!--
 						<div class="push_five three columns">
 							<div class="medium metro rounded btn default">
 								<a href="">Case Study</a>
 							</div>
 						</div>
-						-->
 					</div>
 				</div><!-- / .project-details -->
 
 			</div><!-- / #project-1 -->
 
 			<!-- Project 2 (Mountain Bike Maps) -->
-			<div id="project-2" class="row">
+			<div id="project-2" class="row project-group">
 
 				<!-- Project 2 Showcase -->
 				<div class="six columns project-showcase">
@@ -464,28 +477,72 @@
 			</div><!-- / #bio -->
 
 			<!-- Personal Details -->
-			<div id="personal-details" class="row">
-				<ul class="twelve columns">
-					<li class="two columns">
-						<i class="icon-calendar"></i>23 Years Old
-					</li>
-					<li class="two columns">
-						<i class="icon-user"></i>6&#8217; 6&#8221; Tall
-					</li>
-					<li class="two columns">
-						<i class="icon-user"></i>Red Hair
-					</li>
-					<li class="two columns">
-						<i class="icon-monitor"></i>Mac Pro
-					</li>
-					<li class="two columns">
-						<i class="icon-mobile"></i>iPhone 4
-					</li>
-					<li class="two columns">
-						<i class="icon-star"></i>Food: Sushi
-					</li>
-				</ul>
-			</div><!-- / #personal-details -->
+			<div id="personal-details">
+				<div class="row">
+					<div class="four columns">
+						<ul class="two_up tiles">
+							<li class="">
+								<i class="icon-arrow-combo"></i> 6&#8217; 6&#8221; Tall
+							</li>
+							<li class="">
+								<i class="icon-left-dir" style="margin-left: -6px"></i><i class="icon-right-dir" style="margin-left:-8px;margin-right:-2px;"></i>185 lbs
+							</li>
+						</ul>
+					</div>
+					<div class="four columns">
+						<ul class="two_up tiles">
+							<li class="">
+								<i class="icon-user"></i> Red Hair
+							</li>
+							<li class="">
+								<i class="icon-eye"></i> Gray Eyes
+							</li>
+						</ul>
+					</div>
+					<div class="four columns">
+						<ul class="two_up tiles">
+							<li class="">
+								<i class="icon-monitor"></i> Mac Pro
+							</li>
+							<li class="">
+								<i class="icon-mobile"></i> iPhone 4
+							</li>
+						</ul>
+					</div>
+				</div><!-- / .row -->
+				<div class="row">
+					<div class="four columns">
+						<ul class="two_up tiles">
+							<li class="">
+								<i class="icon-star"></i> Green
+							</li>
+							<li class="">
+								<i class="icon-star"></i> Chill Hop
+							</li>
+						</ul>
+					</div>
+					<div class="four columns">
+						<ul class="two_up tiles">
+							<li class="">
+								<i class="icon-star"></i> Fight Club
+							</li>
+							<li class="">
+								<i class="icon-star"></i> 1984
+							</li>
+						</ul>
+					</div>
+					<div class="four columns">
+						<ul class="two_up tiles">
+							<li class="">
+								<i class="icon-star"></i> Sushi
+							</li>
+							<li class="">
+								<i class="icon-star"></i> Muffins
+							</li>
+						</ul>
+					</div>
+				</div><!-- / .row -->
+	</div><!-- / #personal-details -->
 
 			<!-- Interests (NIP)
 			<div id="interest-icons" class="row">
@@ -578,8 +635,8 @@
 			<div id="all-social" class="row">
 				<div class="ten columns centered">
 					<div class="row">
-						<div class="two columns">
-							<ul class="two_up tiles">
+						<div class="three columns">
+							<ul class="three_up tiles">
 								<li id="Facebook" class="rounded image">
 									<a href="http://www.facebook.com/PixelHippie" title="Facebook">
 										<img src="img/facebook.png" alt="Facebook">
@@ -590,24 +647,20 @@
 										<img src="img/behance.png" alt="Behance">
 									</a>
 								</li>
-							</ul>
-						</div>
-						<div class="two columns">
-							<ul class="two_up tiles">
 								<li id="GitHub" class="rounded image">
 									<a href="https://github.com/PixelHippie" title="GitHub">
 										<img src="img/github.png" alt="GitHub">
 									</a>
 								</li>
+							</ul>
+						</div>
+						<div class="three columns">
+							<ul class="three_up tiles">
 								<li id="LinkedIn" class="rounded image">
 									<a href="www.linkedin.com/pub/austin-cooper/66/7ab/b34" title="LinkedIn">
 										<img src="img/linkedin.png" alt="LinkedIn">
 									</a>
 								</li>
-							</ul>
-						</div>
-						<div class="two columns">
-							<ul class="two_up tiles">
 								<li id="Twitter" class="rounded image">
 									<a href="https://twitter.com/PixelHippie" title="Twitter">
 										<img src="img/twitter.png" alt="Twitter">
@@ -620,8 +673,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="two columns">
-							<ul class="two_up tiles">
+						<div class="three columns">
+							<ul class="three_up tiles">
 								<li id="Spotify" class="rounded image">
 									<a href="https://play.spotify.com/user/pixelhippie" title="Spotify">
 										<img src="img/spotify.png" alt="Spotify">
@@ -632,24 +685,20 @@
 										<img src="img/stackoverflow.png" alt="Stack Overflow">
 									</a>
 								</li>
-							</ul>
-						</div>
-						<div class="two columns">
-							<ul class="two_up tiles">
 								<li id="Google-Plus" class="rounded image">
 									<a href="https://plus.google.com/112033696338122754283/" title="Google+">
 										<img src="img/googleplus.png" alt="Google+">
 									</a>
 								</li>
+							</ul>
+						</div>
+						<div class="three columns">
+							<ul class="three_up tiles">
 								<li id="Dribbble" class="rounded image">
 									<a href="http://dribbble.com/PixelHippie" title="Dribbble">
 										<img src="img/dribbble.png" alt="Dribbble">
 									</a>
 								</li>
-							</ul>
-						</div>
-						<div class="two columns">
-							<ul class="two_up tiles">
 								<li id="DeviantART" class="rounded image">
 									<a href="http://pixelhippie.deviantart.com/" title="DeviantART">
 										<img src="img/deviantart.png" alt="DeviantART">
