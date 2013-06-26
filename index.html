@@ -100,21 +100,21 @@
 			<!-- Intro -->
 			<div id="intro" class="row">
 				<div class="ten columns centered">
-					<p style="font-family: 'Yellowtail', cursive; font-size: 2.2rem; font-weight: 600;">
+					<p style="font-family: 'Yellowtail', cursive; font-size: 2.5rem; font-weight: 600;">
 						Hey!
 					</p>
-					<p>
-						I'm <a href="#about" class="skip" gumby-goto="#about" gumby-offset="-150" gumby-duration="1000">Austin Cooper</a>, a creative geek based in Las Vegas.
+					<p class="lead">
+						I'm Austin Cooper, a creative geek based in Las Vegas.
 					</p>
-					<p>
-						<a href="#services" class="skip" gumby-goto="#services" gumby-offset="-150" gumby-duration="1000">I<i class="icon-heart" style="color:#EB002D"></i>crafting</a> bespoke <strong>websites</strong>, intuitive <strong>interfaces</strong>, wonderful <strong>user experiences</strong>, and engaging <strong>brands</strong> for unique & inspiring human beings.
+					<p class="lead">
+						I<i class="icon-heart" style="color:#EB002D"></i>crafting bespoke websites, intuitive interfaces, wonderful user experiences, and engaging brands for unique & inspiring human beings.
 					</p>
 
 					<!-- Primary Action -->
 					<div id="primary-action" class="row">
 						<div class="five columns">
 							<div class="large metro rounded btn secondary">
-								<a href="#work" class="skip" gumby-goto="#work" gumby-offset="-50" gumby-duration="1000">View my portfolio</a>
+								<a href="#work" class="skip" gumby-goto="#work" gumby-offset="-50" gumby-duration="1000">view my portfolio</a>
 							</div>
 						</div>
 						<div class="two columns">
@@ -122,7 +122,7 @@
 						</div>
 						<div class="five columns">
 							<div class="large metro rounded btn secondary">
-								<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="-50" gumby-duration="1000">Hire me for work</a>
+								<a href="#contact" class="skip" gumby-goto="#contact" gumby-offset="-50" gumby-duration="1000">hire me for work</a>
 							</div>
 						</div>
 					</div><!-- / #primary-action -->
@@ -133,25 +133,31 @@
 			<!-- Main Social -->
 			<div id="main-social" class="row">
 				<div class="five columns centered">
-					<div class="row">
-						<div class="four columns">
-							<div class="medium metro rounded btn default icon-left entypo icon-twitter">
-								<a href="#">Twitter</a>
-							</div>
-						</div>
-						<div class="four columns">
-							<div class="medium metro rounded btn default icon-left entypo icon-dribbble">
-								<a href="#">Dribbble</a>
-							</div>
-							<!-- Dribbble Invite Callout -->
-							<div id="dribbble-callout"></div>
-						</div>
-						<div class="four columns">
-							<div class="medium metro rounded btn default icon-left entypo icon-github">
-								<a href="#">GitHub</a>
-							</div>
-						</div>
-					</div>
+					<ul class="three_up tiles">
+						<li>
+							<a href="https://twitter.com/PixelHippie">
+								<div id="main-twitter" class="rounded image">
+									<img src="img/twitter.png" alt="Twitter">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a id="main-dribbble" href="http://dribbble.com/PixelHippie">
+								<div class="rounded image">
+									<img src="img/dribbble.png" alt="Dribbble">
+								</div>
+								<!-- Dribbble Invite Callout -->
+								<div id="dribbble-callout"></div>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/PixelHippie">
+								<div id="main-github" class="rounded image">
+									<img src="img/github.png" alt="GitHub">
+								</div>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div><!-- / #main-social -->
 
@@ -165,38 +171,71 @@
 				<h3>What I do</h3>
 			</div>
 			<div id="services-overview" class="row">
-				<div class="eight columns centered">
+				<div class="nine columns centered">
 					<div class="four columns">
 						<div id="service1" class="service-group">
-							<h4>Design</h4>
-							<ul>
-								<li>Responsive</li>
-								<li>Branding &amp; Identity</li>
-								<li>Typography</li>
-								<li>UI &amp; UX</li>
-							</ul>
+							<a href="#" class="toggle" gumby-trigger="#design-drawer">
+								<div class="service-title clearfix valign row">
+									<div>
+										<img src="img/process/design-icon5.png" alt="Design" />
+									</div>
+									<div>
+										<h4>Design</h4>
+									</div>
+								</div>
+							</a>
+							<div id="design-drawer" class="drawer service-desc">
+								<ul>
+									<li>Responsive</li>
+									<li>Branding &amp; Identity</li>
+									<li>User Experience</li>
+									<li>User Interface</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="four columns">
 						<div id="service1" class="service-group">
-							<h4>Develop</h4>
-							<ul>
-								<li>HTML5 &amp; CSS3</li>
-								<li>Sass &amp; Compass</li>
-								<li>PHP &amp; MySQL</li>
-								<li>JS &amp; jQuery</li>
-							</ul>
+							<a href="#" class="toggle" gumby-trigger="#develop-drawer">
+								<div class="service-title clearfix valign row">
+									<div>
+										<img src="img/process/develop-icon7.png" alt="Design" />
+									</div>
+									<div>
+										<h4>Develop</h4>
+									</div>
+								</div>
+							</a>
+							<div id="develop-drawer" class="drawer service-desc">
+								<ul>
+									<li>HTML5 &amp; CSS3</li>
+									<li>Sass &amp; Compass</li>
+									<li>PHP &amp; MySQL</li>
+									<li>JS &amp; jQuery</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="four columns">
 						<div id="service1" class="service-group">
-							<h4>Promote</h4>
-							<ul>
-								<li>Advertising</li>
-								<li>Online Marketing</li>
-								<li>Social</li>
-								<li>SEO</li>
-							</ul>
+							<a href="#" class="toggle" gumby-trigger="#promote-drawer">
+								<div class="service-title clearfix valign row">
+									<div>
+										<img src="img/process/promote-icon4.png" alt="Design" />
+									</div>
+									<div>
+										<h4>Promote</h4>
+									</div>
+								</div>
+							</a>
+							<div id="promote-drawer" class="drawer service-desc">
+								<ul>
+									<li>Analytics</li>
+									<li>Online Marketing</li>
+									<li>Social</li>
+									<li>SEO</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -209,58 +248,48 @@
 			<div id="process-overview" class="row">
 				<div class="ten columns centered">
 					<div class="pill tabs">
-						 <ul class="tab-nav">
-						 	<li class="active">
-						 		<a href="#">
-						 			Discovery
-						 		</a>
-						 	</li>
-						 	<li>
-						 		<a href="#">
-						 			Visual Design
-						 		</a>
-						 	</li>
-						 	<li>
-						 		<a href="#">
-						 			Development
-						 		</a>
-						 	</li>
-						 	<li>
-						 		<a href="#">
-						 			Launch
-						 		</a>
-						 	</li>
-						 	<li>
-						 		<a href="#">
-						 			Promote
-						 		</a>
-						 	</li>
-						 </ul>
-						 <div class="tab-content active">
-							 <p>
-								 To get started, we'll meet for a consultation to assess your needs. Once we have our initial direction, we'll review the audience and user base. Then it's research, research, research. We'll need to establish the content before we go any further. During this stage, I'll also set up all the technical stuff. Then it's on to creating a style guide and we finish off with our strategic direction review.
-							 </p>
-						 </div>
-						 <div class="tab-content">
-							 <p>
-								 Next, it's time to develop a concept to move forward on. With input from both parties, I'll design a low fidelity wireframe that encompasses basic layout, content structure, and visual flow. Then, we'll develop the visual style by encompassing elements from our style guide. Then, we'll fine tune our visual style for interaction. This includes buttons, links, and calls-to-action. I'll initiate some basic user testing as well to iron out any unsure elements.
-							 </p>
-						 </div>
-						 <div class="tab-content">
-							 <p>
-								 Actual development takes the longest as I use code to bring your project to life. I'll start out with the code boilerplate and framework to lay a foundation. If the design incorporates a CMS, it will be installed. If a base theme is being used or modified, it will be implemented. If the design will be completely custom, I'll use HTML, CSS, JS, and PHP to develop it. I'll constantly review and improve my work. I don't cut corners. More user testing will be completed at this stage as well.
-							 </p>
-						 </div>
-						 <div class="tab-content">
-							 <p>
-								 One development is complete, final testing will be initiated on the production-ready website. This will take place in a development environment. Together, we'll go through the final review and develop a release plan. Any training will be completed before launch. After much hard work, we can finally transfer all the files and rights and launch your website!
-							 </p>
-						 </div>
-						 <div class="tab-content">
-							 <p>
-								 It doesn't stop there. A website is never truly done. Upon launch, I'll ensure that all SEO requirements are met and any marketing strategies are implemented. I'll also track and handle any usability issues and bugs. Analytics will be set up, monitored, and aggregated so that any issues arising will be dealt with. I'll write a case study for the Success Evaluation so we can see just how effective the new website is.
-							 </p>
-						 </div>
+						<ul class="tab-nav">
+							<li class="active">
+								<a href="#">Discover</a>
+							</li>
+							<li>
+								<a href="#">Design</a>
+							</li>
+							<li>
+								<a href="#">Develop</a>
+							</li>
+							<li>
+								<a href="#">Launch</a>
+							</li>
+							<li>
+								<a href="#">Promote</a>
+							</li>
+						</ul>
+						<div class="tab-content active">
+							<p>
+								First off, we've got to establish what we're out to create. What's the purpose and goals of the project? We'll outline who the audience is and what they're trying to get out of the experience. I'll be doing a lot of research to fine tune my approach. I'll need the content as soon as possible but don't worry – I can help with that. Together, we'll put together style guidelines and a strategic direction.
+							</p>
+						</div>
+						<div class="tab-content">
+							<p>
+								Next, it's time to develop a concept to move forward on. With input from both parties, I'll design a low fidelity wireframe that encompasses basic layout, content structure, and visual flow. Then, we'll develop the visual style by encompassing elements from our style guide. Then, we'll fine tune our visual style for interaction. This includes buttons, links, and calls-to-action. I'll initiate some basic user testing as well to iron out any unsure elements.
+							</p>
+						</div>
+						<div class="tab-content">
+							<p>
+								Actual development takes the longest as I use code to bring your project to life. I'll start out with the code boilerplate and framework to lay a foundation. If the design incorporates a CMS, it will be installed. If a base theme is being used or modified, it will be implemented. If the design will be completely custom, I'll use HTML, CSS, JS, and PHP to develop it. I'll constantly review and improve my work. I don't cut corners.
+							</p>
+						</div>
+						<div class="tab-content">
+							<p>
+								One development is complete, final testing will be initiated on the production-ready website. This will take place in a development environment. Together, we'll go through the final review and develop a release plan. Any training will be completed before launch. After much hard work, we can finally transfer all the files and rights and launch your website!
+							</p>
+						</div>
+						<div class="tab-content">
+							<p>
+								It doesn't stop there. A website is never truly done. Upon launch, I'll ensure that all SEO requirements are met and any marketing strategies are implemented. I'll also track and handle any usability issues and bugs. Analytics will be set up, monitored, and aggregated so that any issues arising will be dealt with. I'll write a case study for the Success Evaluation so we can see just how effective the new website is.
+							</p>
+						</div>
 					</div><!-- / .pill tabs -->
 				</div>
 			</div><!-- / #process-overview -->
@@ -307,22 +336,19 @@
 						<li class="info label">HTML5</li>
 						<li class="info label">CSS3</li>
 						<li class="info label">PHP</li>
-						<li class="info label">Logo</li>
-						<li class="info label">Copy</li>
-						<li class="info label">Adaptive</li>
+						<li class="info label">Logo Design</li>
+						<li class="info label">Copywriting</li>
 					</ul>
 					<!-- Links -->
-					<div class="row project-links">
-						<div class="four columns">
-							<div class="medium metro rounded btn default">
-								<a href="http://www.lvthreshold.com/">Website Link</a>
-							</div>
+					<div class="project-links">
+						<div class="medium metro rounded btn default icon-left entypo icon-link">
+							<a href="http://www.lvthreshold.com/">View Website</a>
 						</div>
-						<div class="push_five three columns">
-							<div class="medium metro rounded btn default">
-								<a href="">Case Study</a>
-							</div>
+						<!-- Unfinished
+						<div class="medium metro rounded btn default icon-left entypo icon-book-open">
+							<a href="">Case Study</a>
 						</div>
+						-->
 					</div>
 				</div><!-- / .project-details -->
 
@@ -359,29 +385,25 @@
 					<h4>Mountain Bike Maps</h4>
 					<!-- Description -->
 					<p>
-						For this project, I collaborated with graphic designer John Williams, of <a href="http://www.jfivedesigns.com/">jFiveDesigns</a>, to bring his personal project to life. John had the brand image, graphic elements, and colors down on his initial site, but he lacked code structure and was a bit behind on modern practices. I helped update the site with a new layout and all-new code framework that John could build upon. I helped refine the style details and advised him on best practices, semantics, and accessibility.
+						I collaborated with graphic designer John Williams, of <a href="http://www.jfivedesigns.com/">jFiveDesigns</a>, on his personal project. John is an avid mountain biker and established the original site to share his maps and experience. He wanted to redesign the site and add some new features. That's where I came in. Together, we developed a new code structure, layout templates, and all new style. I primarily focused on syntax and semantics while advising on best practices.
 					</p>
 					<!-- Tags -->
 					<ul class="project-tags">
 						<li class="info label">HTML5</li>
 						<li class="info label">CSS3</li>
 						<li class="info label">JavaScript</li>
-						<li class="info label">Consultation</li>
+						<li class="info label">PHP</li>
 						<li class="info label">Twitter API</li>
 						<li class="info label">Facebook API</li>
 					</ul>
 					<!-- Links -->
-					<div class="row project-links">
-						<div class="four columns">
-							<div class="medium metro rounded btn default">
-								<a href="http://mountainbikemaps.com/">Website Link</a>
-							</div>
+					<div class="project-links">
+						<div class="medium metro rounded btn default icon-left entypo icon-link">
+							<a href="http://mountainbikemaps.com/">View Website</a>
 						</div>
-						<!--
-						<div class="push_five three columns">
-							<div class="medium metro rounded btn default">
-								<a href="">Case Study</a>
-							</div>
+						<!-- Unfinished
+						<div class="medium metro rounded btn default icon-left entypo icon-book-open">
+							<a href="">Case Study</a>
 						</div>
 						-->
 					</div>
@@ -392,7 +414,7 @@
 			<div class="row">
 				<div id="comingsoon-callout" class="six columns centered">
 					<p>
-						More examples coming soon&#8230;
+						More coming soon&#8230;
 					</p>
 				</div>
 			</div>
@@ -406,259 +428,176 @@
 				<h3>Who I am</h3>
 			</div>
 
-			<div id="skill-trees" class="row">
-				<div class="eleven columns centered">
+			<div class="row">
+
+				<!-- Skill Trees -->
+				<div id="skill-trees" class="four columns">
+
+					<!-- Code Skill Tree -->
+					<div id="code-skills" class="">
+						<ul class="skills">
+							<li>
+								<span class="expand html5"><small>Jedi Master</small></span><label>HTML5</label>
+							</li>
+							<li>
+								<span class="expand css3"><small>Jedi Master</small></span><label>CSS3</label>
+							</li>
+							<li>
+								<span class="expand jquery"><small>Jedi Knight</small></span><label>JS &plus; jQuery</label>
+							</li>
+							<li>
+								<span class="expand php"><small>Padawan</small></span><label>PHP &plus; MySQL</label>
+							</li>
+						</ul>
+					</div><!-- / #code-skills -->
+
+					<!-- Tool Skill Tree -->
+					<div id="tool-skills" class="">
+						<ul class="skills">
+							<li>
+								<span class="expand photoshop"><small>Youngling</small></span><label>Photoshop</label>
+							</li>
+							<li>
+								<span class="expand illustrator"><small>Padawan</small></span><label>Illustrator</label>
+							</li>
+							<li>
+								<span class="expand wordpress"><small>Jedi Knight</small></span><label>WordPress</label>
+							</li>
+							<li>
+								<span class="expand gumby"><small>Jedi Knight</small></span><label>Gumby 2 Framework</label>
+							</li>
+						</ul>
+					</div><!-- / #tool-skills -->
+
+				</div><!-- / #skill-trees -->
+
+				<!-- Bio -->
+				<div id="bio" class="push_one seven columns">
+
 					<div class="row">
 
-						<!-- Code Skill Tree -->
-						<div id="code-skills" class="five columns">
-							<ul class="skills">
-								<li>
-									<span class="expand html5"><small>Jedi Master</small></span><label>HTML5</label>
-								</li>
-								<li>
-									<span class="expand css3"><small>Jedi Master</small></span><label>CSS3</label>
-								</li>
-								<li>
-									<span class="expand jquery"><small>Jedi Knight</small></span><label>JS &plus; jQuery</label>
-								</li>
-								<li>
-									<span class="expand php"><small>Padawan</small></span><label>PHP &plus; MySQL</label>
-								</li>
-							</ul>
-						</div><!-- / #code-skills -->
-
 						<!-- Avatar -->
-						<div id="avatar" class="two columns">
-							<div class="circle image">
+						<div id="avatar" class="three columns">
+							<div class="rounded image">
 								<img src="img/avatar.png" alt="Pixel Hippie Avatar">
 							</div>
 						</div>
 
-						<!-- Tool Skill Tree -->
-						<div id="tool-skills" class="five columns">
-							<ul class="skills">
-								<li>
-									<span class="expand photoshop"><small>Youngling</small></span><label>Photoshop</label>
-								</li>
-								<li>
-									<span class="expand illustrator"><small>Padawan</small></span><label>Illustrator</label>
-								</li>
-								<li>
-									<span class="expand wordpress"><small>Jedi Knight</small></span><label>WordPress</label>
-								</li>
-								<li>
-									<span class="expand gumby"><small>Jedi Knight</small></span><label>Gumby 2</label>
-								</li>
-							</ul>
-						</div><!-- / #tool-skills -->
+						<!-- Personal Details -->
+						<div id="personal-details" class="push_one eight columns">
+							<div class="row">
+								<ul class="two_up tiles">
+									<li class="">
+										<i class="icon-arrow-combo"></i> 6&#8217; 5&#8221;
+									</li>
+									<li class="">
+										<i class="icon-left-dir" style="margin-left: -6px"></i><i class="icon-right-dir" style="margin-left:-8px;margin-right:-2px;"></i>185 lbs
+									</li>
+								</ul>
+							</div>
+							<div class="row">
+								<ul class="two_up tiles">
+									<li class="">
+										<i class="icon-user"></i> Red Hair
+									</li>
+									<li class="">
+										<i class="icon-eye"></i> Gray Eyes
+									</li>
+								</ul>
+							</div>
+							<div class="row">
+								<ul class="two_up tiles">
+									<li class="">
+										<i class="icon-monitor"></i> Mac Pro
+									</li>
+									<li class="">
+										<i class="icon-mobile"></i> iPhone 4
+									</li>
+								</ul>
+							</div>
+						</div><!-- / #personal-details -->
 
 					</div><!-- / .row -->
-				</div>
-			</div><!-- / .row -->
 
-			<!-- Bio -->
-			<div id="bio" class="row">
-				<div class="four columns">
-					<p>
-						Throughout my life, this fantastic duality has persisted between technology and nature. As a kid, I was tinkering with electronics one day and running through the forest the next. I was so curious and wanted to understand how everything worked. I started to obsess with the design of things. I'd constantly sketch and brainstorm ideas for improvements. I sought harmony and simplicity, so I combined principles of nature with design elements. I then went on to build my first computer at age 13, quickly delving into the inner workings. I fell in love with the digital world.
-					</p>
-				</div>
-				<div class="four columns">
-					<p>
-						I dabbled in programming early on, albeit with only slight interest. My first introduction to HTML was about 8 years ago customizing MySpace profiles for friends. The direct visual output quickly fueled my excitement. So I got serious, ditched the bad habits, and really learned HTML and CSS. I built my first websites for friends and it quickly became a full-time passion. Now, I'm turning that into a profession. With that same child-like sense of wonder, I seek to understand and make the web a better, more beautiful place. I'm having an absolute blast along the way as I establish my venture.
-					</p>
-				</div>
-				<div class="four columns">
-					<p>
-						Since freelancing allows me to set my own schedule, I make sure my days are well balanced. I'm still that same kid running through the forest so my days off are pretty fun. These days, I'm generally either hiking or climbing in the surrounding areas. I'll also take several backpacking trips in a year, usually at a week each with one long-distance trip. In the winter, things really pick up as I take up snowboarding and mountaineering. Rainy days usually send me to the garage to work on restoring my 1970 Honda CB350. Keep scrolling to check out the other aspects of my life.
-					</p>
-				</div>
-			</div><!-- / #bio -->
-
-			<!-- Personal Details -->
-			<div id="personal-details">
-				<div class="row">
-					<div class="four columns">
-						<ul class="two_up tiles">
-							<li class="">
-								<i class="icon-arrow-combo"></i> 6&#8217; 6&#8221; Tall
-							</li>
-							<li class="">
-								<i class="icon-left-dir" style="margin-left: -6px"></i><i class="icon-right-dir" style="margin-left:-8px;margin-right:-2px;"></i>185 lbs
-							</li>
-						</ul>
-					</div>
-					<div class="four columns">
-						<ul class="two_up tiles">
-							<li class="">
-								<i class="icon-user"></i> Red Hair
-							</li>
-							<li class="">
-								<i class="icon-eye"></i> Gray Eyes
-							</li>
-						</ul>
-					</div>
-					<div class="four columns">
-						<ul class="two_up tiles">
-							<li class="">
-								<i class="icon-monitor"></i> Mac Pro
-							</li>
-							<li class="">
-								<i class="icon-mobile"></i> iPhone 4
-							</li>
-						</ul>
-					</div>
-				</div><!-- / .row -->
-				<div class="row">
-					<div class="four columns">
-						<ul class="two_up tiles">
-							<li class="">
-								<i class="icon-star"></i> Green
-							</li>
-							<li class="">
-								<i class="icon-star"></i> Chill Hop
-							</li>
-						</ul>
-					</div>
-					<div class="four columns">
-						<ul class="two_up tiles">
-							<li class="">
-								<i class="icon-star"></i> Fight Club
-							</li>
-							<li class="">
-								<i class="icon-star"></i> 1984
-							</li>
-						</ul>
-					</div>
-					<div class="four columns">
-						<ul class="two_up tiles">
-							<li class="">
-								<i class="icon-star"></i> Sushi
-							</li>
-							<li class="">
-								<i class="icon-star"></i> Muffins
-							</li>
-						</ul>
-					</div>
-				</div><!-- / .row -->
-	</div><!-- / #personal-details -->
-
-			<!-- Interests (NIP)
-			<div id="interest-icons" class="row">
-				<div class="eleven columns centered">
 					<div class="row">
-						<div class="three columns">
-							<ul class="three_up tiles">
+						<p>
+							I've always had this fantastic duality in my life – an ironic compatibility between technology and the natural world. From exploring the woods as a kid to building my first computer at 13, I alternated between the two all my life. It wasn't until I discovered my passion for design that I realized how congruous these two facets of my life could be. Now, I'm out to blend my understanding of natural elements with my proficiency with technology. There's more to me below.
+						</p>
+					</div><!-- / .row -->
+
+					<!-- Interests (NIP) -->
+					<div id="interest-icons" class="row">
+						<div class="six columns">
+							<ul class="four_up tiles">
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and get out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>Backpacking satisfies the wanderer in me. Living on the trail, out under the stars – it's a journey. Not all who wander are lost.</span></q>">
+										<h5>Backpacking</h5>
+									</span>
 								</li>
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Climbing</h5>Never before have I felt such a connection with the earth. Climbing is an almost spiritual experience for me. It also happens to be an amazing workout." src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>Climbing is a spiritual experience for me. I've been known to play in the rocks but my true love is mountaineering. There's nothing quite like ascending the peak.</span></q>">
+										<h5>Climbing</h5>
+									</span>
 								</li>
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>lorem rgg" src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>It's part of the adventuring bug. A Jeep allows me to explore without the limits of trekking. Plus, I like to tinker and fabricate.</span></q>">
+										<h5>Off-Roading</h5>
+									</span>
 								</li>
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>The backcountry is my winter wonderland. Since my first taste of powder, I've been pushing more and more. I've even taken up volunteering for Ski Patrol.</span></q>">
+										<h5>Snowboarding</h5>
+									</span>
 								</li>
 							</ul>
 						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
+						<div class="six columns">
+							<ul class="four_up tiles">
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and et out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>It's my favorite food. Ever&#8230;<br>'nuff said.</span></q>">
+										<h5>Sushi</h5>
+									</span>
 								</li>
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>I know – this one's an oddball. Yeah, I'm a hippie with a gun. I enjoy competitive shooting. It goes without saying that I don't condone violence.</span></q>">
+										<h5>Shooting</h5>
+									</span>
 								</li>
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>It's the easiest and quickest way to experience the outdoors. This is my regular escape. I try and et out at least twice a week. Favorite place? Red Rock Canyon for proximity." src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>I seek truth through meditation and awareness. My religion is kindness. My mind, body, &amp; soul are my temple. We Are One.</span></q>">
+										<h5>Enlightenment</h5>
+									</span>
 								</li>
 								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
-								</li>
-								<li>
-									<div class="rounded image">
-										<img class="tooltip" title="<h5>Hiking</h5>Lorem ipsum" src="img/img_silence_demo.jpg">
-									</div>
+									<span class="tooltip" title="<q><span>We all have a voice. I like to put mine to good use. I'm also happy to help any cause/organization that aims to benefit humankind. Send me an email about Pro Bono work!</span></q>">
+										<h5>Activism</h5>
+									</span>
 								</li>
 							</ul>
 						</div>
-					</div><!-- / .row --
-				</div><!-- / .eleven --
-			</div><!-- / #interest-icons -->
+					</div><!-- / #interest-icons -->
+
+				</div><!-- / #bio -->
+
+			</div><!-- / .row -->
 
 			<!-- All Social -->
 			<div class="row">
 				<h4 class="three columns centered">Follow Me!</h4>
 			</div>
 			<div id="all-social" class="row">
-				<div class="ten columns centered">
+				<div class="seven columns centered">
 					<div class="row">
-						<div class="three columns">
-							<ul class="three_up tiles">
+						<div class="six columns">
+							<ul class="four_up tiles">
 								<li id="Facebook" class="rounded image">
 									<a href="http://www.facebook.com/PixelHippie" title="Facebook">
 										<img src="img/facebook.png" alt="Facebook">
 									</a>
 								</li>
-								<li id="Behance" class="rounded image">
-									<a href="http://www.behance.net/PixelHippie" title="Behance">
-										<img src="img/behance.png" alt="Behance">
-									</a>
-								</li>
 								<li id="GitHub" class="rounded image">
 									<a href="https://github.com/PixelHippie" title="GitHub">
 										<img src="img/github.png" alt="GitHub">
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
-								<li id="LinkedIn" class="rounded image">
-									<a href="www.linkedin.com/pub/austin-cooper/66/7ab/b34" title="LinkedIn">
-										<img src="img/linkedin.png" alt="LinkedIn">
 									</a>
 								</li>
 								<li id="Twitter" class="rounded image">
@@ -673,13 +612,8 @@
 								</li>
 							</ul>
 						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
-								<li id="Spotify" class="rounded image">
-									<a href="https://play.spotify.com/user/pixelhippie" title="Spotify">
-										<img src="img/spotify.png" alt="Spotify">
-									</a>
-								</li>
+						<div class="six columns">
+							<ul class="four_up tiles">
 								<li id="Stack-Overflow" class="rounded image">
 									<a href="http://stackoverflow.com/users/2424216/pixelhippie" title="Stack Overflow">
 										<img src="img/stackoverflow.png" alt="Stack Overflow">
@@ -690,18 +624,9 @@
 										<img src="img/googleplus.png" alt="Google+">
 									</a>
 								</li>
-							</ul>
-						</div>
-						<div class="three columns">
-							<ul class="three_up tiles">
 								<li id="Dribbble" class="rounded image">
 									<a href="http://dribbble.com/PixelHippie" title="Dribbble">
 										<img src="img/dribbble.png" alt="Dribbble">
-									</a>
-								</li>
-								<li id="DeviantART" class="rounded image">
-									<a href="http://pixelhippie.deviantart.com/" title="DeviantART">
-										<img src="img/deviantart.png" alt="DeviantART">
 									</a>
 								</li>
 								<li id="Codepen" class="rounded image">
@@ -732,25 +657,28 @@
 					<form action="contact-form.php" method="post">
 						<ul>
 							<li class="field">
-								<label class="" for="name">Name</label>
-								<input id="name" class="text input" type="text" placeholder="John Doe">
+								<label class="" for="first-name">Name</label>
+								<input id="first-name" class="text input" type="text" placeholder="First">
+								<input id="last-name" class="text input" type="text" placeholder="Last">
 							</li>
 							<li class="field">
 								<label class="" for="email">Email</label>
-								<input id="email" class="email input" type="email" placeholder="john.doe@example.com">
+								<input id="email" class="email input" type="email" placeholder="email@example.com">
 							</li>
 							<li class="field">
 								<label class="" for="subject">Subject</label>
 								<div id="subject" class="picker">
 									<select>
-										<option>I just want to say hi!</option>
+										<option value="#" disabled="">What's your message about?</option>
 										<option>I'd like to inquire about hiring you.</option>
+										<option>I just want to say hello!</option>
+										<option>I'd like more info about Pro Bono work.</option>
 									</select>
 								</div>
 							</li>
 							<li class="field">
 								<label class="" for="message">Message</label>
-								<textarea id="message" class="textarea input" placeholder="Your message here..." rows="4"></textarea>
+								<textarea id="message" class="textarea input" placeholder="What would you like to say?" rows="4"></textarea>
 							</li>
 							<li class="field">
 								<div class="medium metro rounded success btn">
@@ -832,8 +760,8 @@
 								<i class="icon-vcard"></i> vCard
 							</h5>
 							<div class="eight columns">
-								<div class="small btn oval default">
-									<a href="">Download</a>
+								<div class="small btn oval default icon-left entypo icon-download">
+									<a href="PixelHippie-vCard.vcf">Download</a>
 								</div>
 							</div>
 						</li>
@@ -842,7 +770,7 @@
 								<i class="icon-doc-text"></i> Resume
 							</h5>
 							<div class="eight columns">
-								<div class="small btn oval default">
+								<div class="small btn oval default icon-left entypo icon-download">
 									<a href="">Download</a>
 								</div>
 							</div>
@@ -861,7 +789,7 @@
 					<p>
 						Copyright &copy; 2013 Pixel Hippie Creative
 					</p>
-					<ul>
+					<ul id="copyright-icons">
 						<li><i class="icon-cc"></i></li>
 						<li><i class="icon-cc-by"></i></li>
 						<li><i class="icon-cc-nc"></i></li>
@@ -878,27 +806,27 @@
 							Developed in <a href="http://www.panic.com/coda">Coda 2</a>
 						</li>
 						<li>
-							<a href="">Git</a> for version control
+							<a href="http://git-scm.com/">Git</a> for version control
 						</li>
 						<li>
-							Framework by <a href="">Gumby 2</a>
+							<a href="http://gumbyframework.com/">Gumby 2</a> Framework
 						</li>
 					</ul>
 					<ul class="li-divider">
 						<li>
-							<a href="">HTML5</a>
+							<a href="http://www.w3.org/html/wg/drafts/html/master/">HTML5</a>
 						</li>
 						<li>
-							<a href="">CSS3</a>
+							<a href="http://www.w3.org/Style/CSS/current-work.en.html">CSS3</a>
 						</li>
 						<li>
-							<a href="">PHP</a>
+							<a href="http://us.php.net/">PHP</a>
 						</li>
 						<li>
-							<a href="">jQuery</a>
+							<a href="http://jquery.com/">jQuery</a>
 						</li>
 					</ul>
-					<p>v0.8 beta</p>
+					<p>v0.9.8 beta</p>
 					<p id="fin">fin</p>
 				</div>
 			</div>
@@ -945,13 +873,14 @@
 	<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
 	<script>
         $(document).ready(function() {
-            $('.tooltip').tooltipster({
-				delay: 300,
-				fixedWidth: 200,
-				maxWidth: 200,
-				interactive: true,
-				speed: 500,
-			});
+          $('.tooltip').tooltipster({
+						delay: 300,
+						fixedWidth: 300,
+						maxWidth: 300,
+						interactive: true,
+						position: 'top-right',
+						speed: 500,
+					});
         });
     </script>
 
