@@ -2544,6 +2544,8 @@ h1.logo>a {opacity: 0.5;}
 
 	#primary-action p {padding-top: 0.5rem;}
 
+	#primary-action a {font-weight: bold;}
+
 /* Main Social */
 
 #main-social li {text-align: center;opacity: 0.8}
